@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="../js/jsCertificacionIngresos.js"></script>
+    <title>Davivienda S.A.</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <!-- #region Header descktop-->
+        <div class="titlesHeader--Desktop">
+            <h1>Vivienda Móvil</h1>
+            <h3>Certificación de ingresos</h3>
+        </div>
+        <!-- #endregion Header descktop-->
+
+        <!-- #region Btn Atras-->
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <!-- #endregion Btn Atras-->
+
+        <!-- #region Nav indicador-->
+        <div class="trackingMain">
+            <div class="trackingMain__dataNav">
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+            </div>
+        </div>
+        <!-- #endregion indicador-->
+        
+        
+        <h1 class="center noMrgnBottom">Proceso de certificación de ingresos</h1>
+        <div class="contentBox">
+            <div class="information__container">
+                <p class="certificadp__title">
+                    Para continuar con el proceso por favor 
+                    <strong>adjunte los documentos que soporten sus ingresos:</strong>
+                </p>
+                <form>
+                    <div class="input2 input2--noBack">
+                        <p class="label">¿Usted declara renta?</p>
+                        <label class="radio radio--flex">
+                            Si
+                            <input type="radio" value="" name="dir-principal" onchange="flujo1(1)"> 
+                            <div class="radio__indicator"></div>
+                        </label>
+                        <label class="radio radio--flex">
+                            No
+                            <input type="radio" value="" name="dir-principal" onchange="flujo1(2)">
+                            <div class="radio__indicator"></div>
+                        </label>
+                    </div>
+                    <!-- #region quest1-Opcion1-->
+                    <div id="quest1" class="input2 input2--noBack ocultar">
+                        <p class="label label--top15">
+                            Tome la foto o adjunte su declaración de renta del
+                            último año:
+                        </p>
+                        <div id="subDoc101" class="contArchivos contArchivos--first">
+                            <div class="divImgArchivos camaraNon" onclick="archivoAdjunto2(101); activarBtn()">
+                                <img src="../images/camera.svg" alt="">
+                                <p class="divImgArchivos__p">Tomar foto</p>
+                            </div>
+                            <div class="divImgArchivos" onclick="archivoAdjunto2(101); activarBtn()">
+                                <img src="../images/paperclip.svg" alt="">
+                                <p class="divImgArchivos__p">
+                                    Adjuntar <br>
+                                    Declaración
+                                </p>
+                            </div>
+                        </div>
+                        <div id="docAdj101" class="archivosAdjuntos ocultar">
+                            <img src="../images/Trazado_4346.svg" class="archivosAdjuntos__check" alt="verificacion adjutos">
+                            <p class="archivosAdjuntos__p">Declaración de renta adjuntada</p>
+                            <img src="../images/icon-dv-delete.svg" class="archivosAdjuntos__delete" alt="eliminar archivos" onclick="eliminarAdjunto(101); desactivarBtn()">
+                        </div>
+                    </div>
+                    <!-- #endregion quest1-Opcion1-->
+
+                    <!-- #region quest1-Opcion2-->
+                    <div id="quest2" class="ocultar">
+                        <div class="input2 input2--noBack">
+                            <hr>
+                            <p class="fristP">Los extractos bancarios de sus <strong>cuentas Davivienda</strong>
+                                se adjuntaran automáticamente para evaluación.</p>
+                            <label class="label">¿Desea adjuntar extractos bancarios diferentes a los 
+                                de Davivienda?</label>
+                            <label class="radio radio--mleft0 radio--flex">
+                                Si
+                                <input type="radio" value="" name="dir-quest2" onchange="flujo2(1); desactivarBtn()"> 
+                                <div class="radio__indicator"></div>
+                            </label>
+                            <label class="radio radio--flex">
+                                No
+                                <input type="radio" value="" name="dir-quest2" onchange="flujo2(2); activarBtn()">
+                                <div class="radio__indicator"></div>
+                            </label>
+                        </div>
+                        <!-- #region subSeccion subirArchivos-->
+                        <div id="quest2sub1" class="cardArchivos ocultar">
+                            <h2 class="cardArchivos__titulo">Adjunte los <strong>extractos bancarios</strong> de otro banco:</h2>
+                            <div class="cardArchivos__lista">
+                                <img src="../images/Trazado_4258.svg" alt="">
+                                <p>Características de los extractos bancarios:</p>
+                            </div>
+                            <div class="infoExtractos">
+                                <p class="infoExtractos__texto">
+                                    Ser de <strong>los últimos tres meses,</strong> contener el número
+                                    de  producto y el tipo de cuenta (ahorros o corriente)
+                                    <br><br>
+                                    Tenga en cuenta que no se aceptan extractos de 
+                                    cuentas conjuntas o de empresas.
+                                    <br><br>
+                                    <strong>Recuerde verificar que los extractos pdf</strong> 
+                                    adjuntados no requieran de una contraseña
+                                    para consultarlos.
+                                </p>
+                                
+                            </div>
+    
+                            <hr>
+                            
+                            <div class="cardArchivos__lista">
+                                <img src="../images/Trazado_4258.svg" alt="">
+                                <p>Adjunte sus extractos bancarios:</p>
+                            </div>
+    
+                            <!-- #region subArchivps-->
+                            <div id="doc1" class="input2 input2--sub">
+                                <label class="labelBold">
+                                    Cuenta 1
+                                </label>
+                                <div id="subDoc1" class="contArchivos">
+                                    <div class="divImgArchivos camaraNon" onclick="archivoAdjunto(1); activarBtn()">
+                                        <img src="../images/camera.svg" alt="">
+                                        <p class="divImgArchivos__p">Tomar foto</p>
+                                    </div>
+                                    <div class="divImgArchivos" onclick="archivoAdjunto(1); activarBtn()">
+                                        <img src="../images/paperclip.svg" alt="">
+                                        <p class="divImgArchivos__p">
+                                            Adjuntar <br>
+                                            Extractos
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="docAdj1" class="archivosAdjuntos ocultar">
+                                    <img src="../images/Trazado_4346.svg" class="archivosAdjuntos__check" alt="verificacion adjutos">
+                                    <p class="archivosAdjuntos__p">Extractos adjuntados</p>
+                                    <img src="../images/icon-dv-delete.svg" class="archivosAdjuntos__delete" alt="eliminar archivos" onclick="eliminarAdjunto(1)">
+                                </div>
+                            </div>
+
+                            <div id="doc2" class="input2 input2--sub ocultar">
+                                <label class="labelBold">
+                                    Cuenta 2
+                                </label>
+                                <div id="subDoc2" class="contArchivos">
+                                    <div class="divImgArchivos camaraNon" onclick="archivoAdjunto(2)">
+                                        <img src="../images/camera.svg" alt="">
+                                        <p class="divImgArchivos__p">Tomar foto</p>
+                                    </div>
+                                    <div class="divImgArchivos" onclick="archivoAdjunto(2)">
+                                        <img src="../images/paperclip.svg" alt="">
+                                        <p class="divImgArchivos__p">
+                                            Adjuntar <br>
+                                            Extractos
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="docAdj2" class="archivosAdjuntos ocultar">
+                                    <img src="../images/Trazado_4346.svg" class="archivosAdjuntos__check" alt="verificacion adjutos">
+                                    <p class="archivosAdjuntos__p">Extractos adjuntados</p>
+                                    <img src="../images/icon-dv-delete.svg" class="archivosAdjuntos__delete" alt="eliminar archivos" onclick="eliminarAdjunto(2)">
+                                </div>
+                            </div>
+
+                            <div id="doc3" class="input2 input2--sub ocultar">
+                                <label class="labelBold">
+                                    Cuenta 3
+                                </label>
+                                <div id="subDoc3" class="contArchivos">
+                                    <div class="divImgArchivos camaraNon" onclick="archivoAdjunto(3)">
+                                        <img src="../images/camera.svg" alt="">
+                                        <p class="divImgArchivos__p">Tomar foto</p>
+                                    </div>
+                                    <div class="divImgArchivos" onclick="archivoAdjunto(3)">
+                                        <img src="../images/paperclip.svg" alt="">
+                                        <p class="divImgArchivos__p">
+                                            Adjuntar <br>
+                                            Extractos
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="docAdj3" class="archivosAdjuntos ocultar">
+                                    <img src="../images/Trazado_4346.svg" class="archivosAdjuntos__check" alt="verificacion adjutos">
+                                    <p class="archivosAdjuntos__p">Extractos adjuntados</p>
+                                    <img src="../images/icon-dv-delete.svg" class="archivosAdjuntos__delete" alt="eliminar archivos" onclick="eliminarAdjunto(3)">
+                                </div>
+                            </div>
+
+                            <div id="doc4" class="input2 input2--sub ocultar">
+                                <label class="labelBold">
+                                    Cuenta 4
+                                </label>
+                                <div id="subDoc4" class="contArchivos">
+                                    <div class="divImgArchivos camaraNon" onclick="archivoAdjunto(4)">
+                                        <img src="../images/camera.svg" alt="">
+                                        <p class="divImgArchivos__p">Tomar foto</p>
+                                    </div>
+                                    <div class="divImgArchivos" onclick="archivoAdjunto(4)">
+                                        <img src="../images/paperclip.svg" alt="">
+                                        <p class="divImgArchivos__p">
+                                            Adjuntar <br>
+                                            Extractos
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="docAdj4" class="archivosAdjuntos ocultar">
+                                    <img src="../images/Trazado_4346.svg" class="archivosAdjuntos__check" alt="verificacion adjutos">
+                                    <p class="archivosAdjuntos__p">Extractos adjuntados</p>
+                                    <img src="../images/icon-dv-delete.svg" class="archivosAdjuntos__delete" alt="eliminar archivos" onclick="eliminarAdjunto(4)">
+                                </div>
+                            </div>
+
+                            <div id="doc5" class="input2 input2--sub ocultar">
+                                <label class="labelBold">
+                                    Cuenta 5
+                                </label>
+                                <div id="subDoc5" class="contArchivos">
+                                    <div class="divImgArchivos camaraNon" onclick="archivoAdjunto(5)">
+                                        <img src="../images/camera.svg" alt="">
+                                        <p class="divImgArchivos__p">Tomar foto</p>
+                                    </div>
+                                    <div class="divImgArchivos" onclick="archivoAdjunto(5)">
+                                        <img src="../images/paperclip.svg" alt="">
+                                        <p class="divImgArchivos__p">
+                                            Adjuntar <br>
+                                            Extractos
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="docAdj5" class="archivosAdjuntos ocultar">
+                                    <img src="../images/Trazado_4346.svg" class="archivosAdjuntos__check" alt="verificacion adjutos">
+                                    <p class="archivosAdjuntos__p">Extractos adjuntados</p>
+                                    <img src="../images/icon-dv-delete.svg" class="archivosAdjuntos__delete" alt="eliminar archivos" onclick="eliminarAdjunto(5)">
+                                </div>
+                            </div>
+
+                            <div id="linkArchivo" class="linkAgregar ocultar" onclick="subirMasArchivos()">
+                                <p>Agregar extractos de otra cuenta</p>
+                            </div>
+
+                            <!-- #endregion subArchivps-->
+                            
+    
+    
+                        </div>
+                        <!-- #endregion subSeccion subirArchivos-->
+
+                    </div>
+                    
+
+                    <!-- #endregion quest1-Opcion2-->
+                    
+                </form>
+            </div>
+        </div>
+
+        <!-- #region btn Continuar-->
+        <div class="contButtons contButtons--form">
+            <button type="button" class="button button--certifica button--secondary button--back">Regresar</button>
+            <button id="btn" type="button" class="button button--certifica button--primary">Continuar</button>
+        </div>
+        <!-- #endregion btn Continuar-->
+    </section>
+
+</body>
+
+</html>

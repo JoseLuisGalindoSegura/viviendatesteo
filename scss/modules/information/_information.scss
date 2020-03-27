@@ -1,0 +1,23 @@
+.information__container{
+    .container__title{
+        font-size: $font-p;
+        margin-bottom: 13px;
+        text-align: left;
+        color: $gris-57;
+        strong{
+            font-weight: bold;
+        }
+    }
+    .certificadp__title{
+        @include fuentesJD(14, 400, $gris-57, 16px);
+        margin-bottom: 13px;
+        text-align: left;
+        strong{
+            font-weight: bold;
+        }
+        &--bot0{
+            margin-bottom: 0px;
+        }
+    }
+}
+    

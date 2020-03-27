@@ -1,0 +1,74 @@
+//Radio Buttons
+.radio{
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+    width: auto;
+    float: left;
+    margin-left: 15%;
+    font-family: $roboto;
+    font-weight: 100;
+    padding-top: 3px;
+    margin-bottom: 0;
+    cursor: pointer;
+    &:first-of-type{
+        margin-left: 0px;
+    }
+    &--mleft0{
+        margin-left: 0px;
+    }
+    &.radio--mrgnLeft{
+        margin-left: 25%;
+    }
+    input{
+        display: none;
+        &:checked~.radio__indicator {
+            &::after {
+                opacity: 9;
+            }
+        }
+    }
+
+    //Radio Button
+    .radio__indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background: transparent;
+        border: 1.4px solid lighten($gris-cc, 5%);
+        background-color: #fff;
+        border-radius: 50%;
+
+        transition-duration: .2s;
+        &:hover{
+            border: 1.4px solid darken($gris-cc, 25%);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: auto;
+
+            width: 11px;
+            height: 11px;
+            background-color: $rojo;
+            border-radius: 50%;
+
+            box-sizing: unset;
+            opacity: 0;
+            transition-duration: .2s;
+
+            transform: translateY(-50%) translateX(-50%);
+        }
+    }
+    &--flex{
+        display: flex;
+        align-items: center;
+        .radio__indicator{
+            top: initial;
+        }
+    }
+}

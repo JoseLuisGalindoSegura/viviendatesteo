@@ -1,0 +1,173 @@
+.selection__container{
+    .container--intBackGray{
+        background-color: $gris-ee !important;
+        .container--titleInput{
+            display: flex;
+            position: relative;
+            justify-content: start;
+            margin-bottom: 15px;
+            height: 17px;
+            & > p{
+                color: $gris-57;
+                font-size: $font-p;
+                font-weight: bold;
+            }
+            .buttonTooltip--textPosition{
+                top: 0px;
+                left: 3px;
+            }
+            .tooltip{
+                z-index: 10;
+            }
+        }
+    }
+    .input{
+        margin-bottom: -10px;
+        .radio--optionCard--toggle{
+            margin-top: -5px;
+        }
+        .last{
+            margin-top: 21.4px;
+        }
+    }
+    .centerBar{
+        margin: 7.5px auto 6.5px;
+        border-radius: 10px;
+        border: 1px solid rgba($color: $gris-57, $alpha: 0.1);
+        width: 200px;
+    }
+    .endText{
+        font-size: $font-s;
+    }
+    .contButtons{
+        margin-bottom: 0px;
+    }
+}
+.textButton{
+    font-size: $font-s;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+}
+.container__selectContry{
+    *{
+        color: $gris-57;
+    }
+    .line{
+        margin: 15px auto;
+        width: 60%;
+    }
+    .contSelectionCountry{
+        width: 95%;
+        height: auto;
+        margin: auto;
+        .contSelect{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .selection{
+                height: 35px;
+                background-color: $gris-f9;
+                width: 48%;
+                border-radius: 20px;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0px 0px 5px;
+                .icon{
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    top: 10px;
+                    left: 5px;
+                }
+                p{
+                    font-size: $font-s;
+                    font-weight: bold;
+                }
+                &.activeSelect{
+                    height: 35px;
+                    background-color: $gris-ee;
+                    box-shadow: 0px 1px 2px 2px rgba($color: $gris-57, $alpha: 0.1);
+                    width: 48%;
+                    border-radius: 20px;
+                    position: relative;
+                    z-index: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0px 0px 5px;
+                    .icon{
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        top: 10px;
+                        left: 5px;
+                    }
+                    p{
+                        font-size: $font-s;
+                        font-weight: bold;
+                    }
+                }
+                &.desactiveSelect{
+                    height: 35px;
+                    background-color: $gris-f9 ;
+                    width: 48%;
+                    border-radius: 20px;
+                    position: relative;
+                    z-index: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0px 0px 5px;
+                    .icon{
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        top: 10px;
+                        left: 5px;
+                        opacity: 0.4;
+                    }
+                    p{
+                        font-size: $font-s;
+                        font-weight: bold;
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+        .contOption{
+            width: 97.5%;
+            margin: -20px auto 7.5px;
+            padding: 30px 0px 13px;
+            background-color: $gris-ee;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 1px 2px 2px rgba($color: $gris-57, $alpha: 0.1);
+            display: none;
+            &.activeInfoCity{
+                display: flex;
+                flex-direction: column;
+            }
+            .textOptionTop{
+                margin: auto;
+                font-size: $font-s;
+                font-weight: bold;
+            }
+            .IconOption{
+                width: 20px;
+                height: 20px;
+                margin: 9px auto 7px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .textOptionBottom{
+                margin: auto;
+                font-size: $font-s;
+            }
+        }
+    }
+}

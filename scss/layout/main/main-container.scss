@@ -1,0 +1,541 @@
+//Esta clase se crea para el body, se usar para evitar el scroll en los modales.
+.overFlowHY{
+    overflow-y: hidden;
+
+}
+
+    
+
+//Containers - Importante en todo los flujos - Contenedor principal
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    position: relative;
+
+    //Fluid Atencion en Línea / Support
+    &--Fluid{
+        padding-bottom: 110px;
+    }
+
+    &--Kangaroo{
+        padding-bottom: 110px;
+    }
+    
+    .container--intBackGray{
+        display: block;
+        max-width: 650px;
+        padding: 20px;
+        margin: auto;
+        background-color: $gris-ee;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+// organizar JD
+//contenedor de Certificacion_Ingresos foto y adjuntar
+.contArchivos{
+    @include flexBox-center;
+    margin-top: 15px;
+    &--top0{
+        margin-top: 0px;
+    }
+    &--first{
+        margin-bottom: 0px;
+    }
+    &--top5{
+        margin-top: 5gpx;
+    }
+}
+.divImgArchivos{
+    background-color: rgba(204, 204, 204, 0.5);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0px 6.2px;
+    @include flexBox-center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 12px;
+    text-align: center;
+    &__p{
+        @include fuentesJD(10, 300, $gris-57, 12px);
+    }
+    &--modal{
+        margin: 0px 10px;
+        .divImgArchivos__p{
+            font-weight: 500;
+            margin-top: 6%;
+        }
+    }
+}
+
+//contenedor back gris subir archivos
+.cardArchivos{
+    background-color: $gris-ee;
+    padding: 15px 13px;
+    border-radius: 6px;
+    margin-top: 15px;
+    &__titulo{
+        @include fuentesJD(12, 400, $negro-44, 12px);
+        margin: 0px;
+        margin-bottom: 13px;
+    }
+    &__lista{
+        @include flexBox;
+        text-align: left;
+        img{
+            margin-right: 7.8px;
+        }
+        p{
+            @include fuentesJD(12, bold, $gris-57, 12px);
+        }
+    }
+    hr{
+        width: 44.88%;
+        margin: 15px auto 14px auto;
+        height: 1px;
+        background-color: rgba(112, 112, 112, 0.25);
+    }
+    .archivosAdjuntos{
+        position: relative;
+        width: 96.32%;
+        height: 31px;
+        @include flexBox;
+        background-color: #DCDCDC;
+        margin: auto;
+        border-radius: 16px;
+        padding: 0px 13px 0px 9px;
+        //margin-top: 14px;
+        &__check{
+            margin-right: 7.6px;
+        }
+        &__p{
+            @include fuentesJD(14, 400, $gris-57, 15px);
+        }
+        &__delete{
+            position: absolute;
+            right: 13px;
+        }
+        &--top5{
+            margin-top: 5px;
+        }
+    }
+    .linkAgregar{
+        margin-top: 13px;
+        p{
+            @include fuentesJD(12, bold, $gris-57, 12px);
+            text-decoration: underline;
+        }
+    }
+}
+
+.archivosAdjuntos{
+    position: relative;
+    width: 96.32%;
+    height: 31px;
+    @include flexBox;
+    background-color: #DCDCDC;
+    margin: auto;
+    border-radius: 16px;
+    padding: 0px 13px 0px 9px;
+    margin-top: 14px;
+    &__check{
+        margin-right: 7.6px;
+    }
+    &__p{
+        @include fuentesJD(14, 400, $gris-57, 15px);
+    }
+    &__delete{
+        position: absolute;
+        right: 13px;
+    }
+}
+
+//card explicacion
+.infoExtractos{
+    width: 96.678%;
+    margin: 15px auto;
+    /*background-image: url("../images/fondoDescripcion.jpg");*/
+    background-image: url("../images/fondo-descripcion.svg");
+    background-repeat: no-repeat;
+    background-color: #F7F7F7;
+    background-position-x: 100%;
+    background-position-y: 0%;
+    padding: 15px 10px 15px 10px;
+    border-radius: 6px;
+
+    ul{
+        list-style-type: disc;
+        margin-left: 16px;
+        margin-top: 15px;
+        li{
+            margin-bottom: 10px;
+            @include fuentesJD(12, 400, $gris-57, 14px);
+            text-align: left;
+            &:last-of-type{
+                margin: 0px;
+            }
+        }
+    }
+
+    &__titulo{
+        @include fuentesJD(12, bold, $gris-57, 12px);
+        margin: 0px;
+    }
+    &__texto{
+        @include fuentesJD(12, 400, $gris-57, 14px);
+        text-align: left;
+        strong{
+            font-weight: bold;
+        }
+        &--bot5{
+            margin-bottom: 5px;
+        }
+        &--bot20{
+            margin-bottom: 20px;
+        }
+    }
+    &__lista{
+        @include flexBox;
+        text-align: left;
+        margin-bottom: 8px;
+        img{
+            margin-right: 7.8px;
+        }
+        p{
+            @include fuentesJD(12, bold, $gris-57, 12px);
+        }
+    }
+    &--top0{
+        margin-top: 0px;
+    }
+}
+
+//camara
+.contFoto{
+    height: calc(100vh - 114px);
+    overflow: hidden;
+    z-index: 1;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.tomarFoto{
+    position: fixed;
+    width: 100%;
+    height: 123px;
+    bottom: 0px;
+    border-radius: 7px 7px 0px 0px;
+    z-index: 7;
+    background-color: #D9D9D9;
+    &__titulo{
+        @include fuentesJD(14, 400, $negro-44, 16px);
+        text-align: center;
+        margin-top: 9px;
+        margin-bottom: 15px;
+        &--mTop14{
+            margin-top: 14px;
+            margin-bottom: 7px;
+        }
+    }
+    &__foto{
+        width: 44.2px;
+        height: 44.72px;
+        margin: auto;
+        background-image: url("../images/camara.svg");
+        background-repeat: no-repeat;
+    }
+    .opcionesCamara{
+        @include flexBox;
+        padding: 0px 19px;
+        .aCamara{
+            @include flexBox;
+            position: relative;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: center;
+            background-color: #FFFFFF;
+            opacity: 0.5;
+            width: 39.34px;
+            height: 49.91px;
+            border-radius: 6px;
+            padding-top: 7px;
+            &__label{
+                text-align: center;
+                @include fuentesJD(10, bold, $gris-57, 0px);
+                margin: 0px;
+                margin-top: 10px;
+                z-index: 2;
+            }
+            &__p{
+                @include fuentesJD(10, 300, $gris-57, 16px);
+                margin: 0px;
+                z-index: 2;
+                &--fin{
+                    @include fuentesJD(9, bold, $gris-57, 16px);
+                    margin: 0px;
+                    z-index: 2;
+                }
+            }
+            &__fondo{
+                position: absolute;
+                top: 2px;
+                width: 90%;
+                height: 90%;
+                z-index: 1;
+            }
+            &__img{
+                z-index: 3;
+            }
+            &--hiden{
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+
+
+.containerAdjunto{
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    .separador{
+        width: 100%;
+        @include flexBox-center;
+        &__hr{
+            height: 1px;
+            width: 65.3%;
+            background-color: #707070;
+            opacity: 0.3;
+        }
+    }
+    .contAgregar{
+        @include flexBox;
+        position: relative;
+        width: 41%;
+        max-width: 190px;
+        justify-content: center;
+        height: 36px;
+        background-color: $blanco-f8;
+        border-radius: 5px;
+        margin: 42px auto 44px auto;
+        padding: 8px 15px;
+        &__img{
+            margin-right: 4.2px;
+        }
+        &__p{
+            @include fuentesJD(14, bold, #ACACAC, 16px);
+        }
+    }
+
+    .indicacion{
+        margin: auto;
+        margin-top: 12px;
+        &__p{
+            @include fuentesJD(14, 400, $gris-57, 19px);
+        }
+        strong{
+            font-weight: bold;
+        }
+    }
+}
+
+// previsulaizacion de adjuntos
+.vistaAdjunto{
+    display: flex;
+     margin: 35px 0px;
+     &--Scroll{
+        flex-direction: column;
+        align-items: center;
+    }
+    .DivImg{
+        background-color: #FFFFFF;
+        width: 50.67%;
+        margin-left: 18.13%;
+        margin-right: 12px;
+        padding: 10px 10.5px 11.7px 11px;
+        border-radius: 6px;
+        -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+        -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+        box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+        &--Scroll{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: 0;
+        }
+        &__texto{
+            @include fuentesJD(12, 400, $gris-57, 16px);
+            text-align: center;
+            margin-bottom:  10.7px;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+    .descPdf{
+        @include flexBox-center;
+        flex-direction: column;
+        margin-top: 17px;
+        &__img{
+            width: 16px;
+            height: 16px;
+        }
+        &__p{
+            @include fuentesJD(11, 300, $gris-57, 20px);
+            text-align: center;
+            margin: 0px;
+        }
+    }
+    .DivAcciones{
+        width: auto;
+        @include flexBox-center;
+        flex-direction: column;
+        .accion{
+            @include flexBox-center;
+            flex-direction: column;
+            margin-bottom: 19px;
+            &__img{
+                @include flexBox-center;
+                width: 35px;
+                height: 35px;
+                background-color: #FFFFFF;
+                border-radius: 10px;
+                margin-bottom: 3px;
+                -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+                -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+                box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+            }
+            &__texto{
+                @include fuentesJD(13, 400, $gris-57, 14px);
+            }
+            &--bot0{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    &--bot20{
+        margin-bottom: 20px;
+    }
+}
+
+// previsualizacion PDF
+.vistaAdjuntoPdf{
+    @include flexBox-center;
+    flex-direction: column;
+    margin: 52px 0px;
+    margin-bottom: 73px;
+    .DivPdf{
+        background-color: #FFFFFF;
+        width: 49.1%;
+        padding: 22px 16px 10px 16px;
+        border-radius: 6px;
+        -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+        -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+        box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16);
+        &__texto{
+            @include fuentesJD(12, 400, $gris-57, 16px);
+            text-align: center;
+            margin-bottom:  10.7px;
+        }
+        &__img{
+            width: 100%;
+        }
+
+        .descPdf{
+            @include flexBox-center;
+            flex-direction: column;
+            margin-top: 20px;
+            &__img{
+                width: 16px;
+                height: 16px;
+            }
+            &__p{
+                @include fuentesJD(11, 300, $gris-57, 20px);
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+// mostrar componente
+.mostrar{
+    display: block !important;
+}
+
+.ocultar{
+    display: none !important;
+}
+
+
+//card zona mixta
+.cardBoxMixta{
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin: 15px 11px;
+    &__lista{
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        .txt{
+            @include fuentesJD(14, bold, $gris-57, 14px);
+            margin-left: 16px;
+            margin-bottom: 0px;
+        }
+    }
+    &__img{
+        width: auto;
+    }
+    hr{
+        width: 63.1%;
+        margin: 0px auto;
+        height: 1px;
+        background-color: rgba(112, 112, 112, 0.25);
+        margin-top: 15px;
+    }
+    &__descripcion{
+        @include fuentesJD(12, 400, $gris-57, 14px);
+        text-align: center;
+        margin-top: 15px;
+        strong{
+            font-weight: bold;
+        }
+    }
+    .contButtons{
+        margin-bottom: 0px;
+        .button--primary{
+            margin-bottom: 0px;
+            width: 57.1%;
+        }
+    }
+}
+
+//condiciones
+.condiciones{
+    margin-top: 13px;
+    &__p{
+        @include fuentesJD(12, 400, $gris-57, 14px);
+        a{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.iconosMedicos{
+    position: relative;
+    margin-top: 16px;
+    &::before{
+        content: url('../images/icon-vd-medica.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 50%;
+    }
+}
+
+.ceparador{
+     border-width: 1px;
+     color:$gris-70;
+     width: 150px;
+     margin: 0 auto;
+     opacity: 25%;
+}
+
+//componente pop up valoracion medica 
+.contModal {
+
+    .modal--ligth{
+        
+        .modal__body{
+            margin-bottom: 19px;
+
+            &--mrgbtt{
+                margin-bottom: 0;
+            }
+
+            p{
+                strong{
+
+                    font-size: 18px;
+                }
+            }
+        }
+       
+        .boxOscuro{
+            background-color: #EEEEEE;
+            border-radius: 5px;
+            padding: 14px;
+            //Se agrega esta clase para el pop up de tres y asi manejar en todos el mismo tamaño evitando el salto visual
+            &--tamañoFijo{
+                height: 266px;
+            }
+
+            .imagen{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 36px;
+                //Se agrega la dimension correcta para el del pop up
+                img{
+                    width: 66px;
+                }
+
+                &--mrgtop{
+                    margin-top: 24px;
+                }
+
+                &--mrgtopMax{
+                    margin-top: 35px;
+                }
+
+
+                &--mrgbottom{
+                    margin-bottom: 22px;
+                }
+            }
+
+            .ceparador{
+                color: $gris-57;
+                opacity: 20%;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+            .parrafoBasico{
+                font-size: $font-p;
+                text-align: center;
+                color: $negro-44;
+                margin-top: 15px;
+                line-height: 1;
+
+                strong{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+//Imagenes importantes cn rotacion
+
+.roteImg{
+    transform: rotate(-90deg);
+}
+

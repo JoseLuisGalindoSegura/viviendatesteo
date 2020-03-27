@@ -1,0 +1,635 @@
+.container__credit {
+
+    background-color: $blanco-fd;
+    border-radius: 6px;
+
+    * {
+        color: $gris-57;
+    }
+    //Se crea el flex box para usarlo en el traking de valoracion medica 3
+    &--flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 15px;
+        img{
+            width: 30px;
+        }
+    }
+
+    &--popUp {
+        width: 80%;
+        max-width: 350px;
+        border-radius: 10px;
+        display: inline-block;
+        left: 50%;
+        overflow: hidden;
+        background-color: transparent;
+    }
+
+    &.pddigBottom {
+        padding-bottom: 0.1px;
+    }
+
+    &.mrgBottom {
+        margin-bottom: 12px;
+    }
+
+    .container__image {
+        width: 100%;
+        max-width: 500px;
+        height: 21.5vw;
+        max-height: 75px;
+        margin: auto;
+        border-bottom-left-radius: 50% 10px;
+        border-bottom-right-radius: 50% 10px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        &>img {
+            position: absolute;
+            width: 100%;
+            height: 215%;
+            left: 0px;
+            bottom: -60%;
+        }
+
+        .textTopCard {
+            position: absolute;
+            top: 35%;
+            font-size: $font-p+4;
+            font-weight: bold;
+            color: $blanco-ff;
+            width: 100%;
+
+            &.center {
+                text-align: center;
+            }
+        }
+
+        .textButtomCard {
+            position: absolute;
+            top: 60%;
+            font-size: $font-s;
+            color: $blanco-ff;
+            width: 100%;
+
+            &.center {
+                text-align: center;
+            }
+        }
+
+        p {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            top: 50%;
+            font-size: $font-s;
+            color: $blanco-ff;
+        }
+
+        .textCardT10 {
+            top: 45%;
+            font-size: $font-p;
+            font-weight: bold;
+            line-height: 16px;
+
+        }
+
+        &--actionFull {
+            img {
+                width: 100%;
+                height: 100%;
+                left: 0px;
+                bottom: 0%;
+            }
+        }
+    }
+
+    .container__secundaryCredit {
+        margin: auto;
+        position: relative;
+        max-width: 500px;
+
+        &.widthFit {
+            width: fit-content;
+        }
+
+        &:last-child:before {
+            height: 0px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -27px;
+            height: 57px;
+            border-left: solid 1px $gris-vertical;
+            left: 25px;
+        }
+
+        &--beforShort {
+            &::before {
+                height: 27px;
+            }
+        }
+
+        &--mostBottom {
+            &::before {
+                height: 47px;
+                bottom: -48px;
+            }
+
+        }
+
+        .containerData__title {
+            width: 95%;
+            height: 43px;
+            margin: 15px auto;
+            border-radius: 50px;
+            background-color: $blanco-f8;
+            display: flex;
+            align-items: center;
+            position: relative;
+            box-shadow: 0px 1px 1px 0.5px rgba($color: $negro-00, $alpha: 0.16);
+
+            &--completed {
+                background-color: $gris-ee;
+                box-shadow: none;
+            }
+
+            &--disabled {
+                background-color: $blanco-f8;
+                box-shadow: none;
+
+                .contended__secondTitle {
+                    font-size: $font-p;
+                    color: rgba($color: $gris-57, $alpha: 0.6);
+
+                    p {
+                        font-weight: bold;
+                    }
+
+                    &--cambioColor {
+                        opacity: 60%;
+                    }
+
+                }
+            }
+
+            .buttonTooltip--textPosition {
+                top: 0;
+            }
+
+            .contended__firstTitle {
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                margin: 0px 7.7px 0px 5.5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                * {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .contended__secondTitle {
+                font-size: $font-p;
+
+                p {
+                    font-weight: bold;
+                }
+
+                &--cambioColor {
+                    opacity: 60%;
+                }
+
+            }
+
+            .contended__threeTitle {
+                position: absolute;
+                right: 4.4px;
+                border-radius: 50%;
+                width: 37px;
+                height: 37px;
+                background-color: $blanco-ff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &--opacity50 {
+                    opacity: 50%;
+                }
+
+                &--escalaGrises {
+                    filter: grayscale(100%);
+                    opacity: 50%;
+                }
+
+                * {
+                    width: 55%;
+                    height: 55%;
+                }
+            }
+        }
+
+        .containerData__content {
+            padding: 40px 15px 15px;
+            width: 95%;
+            margin: -36.5px auto 0px;
+            background-color: $blanco-f8;
+            border-radius: 0px 0px 15px 15px;
+            box-shadow: 0px 3px 6px rgba(87, 87, 87, 0.16);
+
+            img {
+                &.imgreloj {
+                    width: 40px;
+                }
+            }
+
+            &.specialChange {
+                padding: 40px 11px 15px;
+            }
+
+            &.popUpsChange {
+                margin: -10px 0px 0px;
+                padding: 10px 3px 0px;
+                width: 100%;
+                max-width: 400px;
+                background-color: $blanco-ff;
+            }
+
+            .containerIcon__Data {
+                //Se agregan las porpiedades display flex y flex direction, para centrar de mejor manera los elementos.
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: $blanco-ff;
+                border-radius: 8px;
+                margin: 0 0 15px 0;
+                padding: 12px 11px 15px;
+
+                &--noMrgn {
+                    margin: 0px;
+                }
+
+                &.changeColor {
+                    margin: 0px 5px;
+                    background-color: $blanco-f8;
+
+                    &.mrgnBottom {
+                        margin-bottom: 15px;
+                        ;
+                    }
+                }
+
+                .subTitle {
+                    display: flex;
+                    align-items: flex-start;
+
+                    &--mrgnBottom {
+                        margin-bottom: 30px;
+                    }
+
+                    &--widthFull {
+                        width: 100%;
+                    }
+
+                    img {
+                        margin: 3px 8px 0px 0px;
+                    }
+                }
+
+                .containerData__Icon {
+                    display: flex;
+                    width: 65%;
+
+                    &--width90 {
+                        width: 90%;
+                    }
+
+                    &--widthForIcon {
+                        width: 36%;
+                    }
+
+                    &--mrgnTop {
+                        margin-top: 15px;
+                    }
+
+                    &--mrgnBottom {
+                        margin-bottom: 15px;
+                    }
+
+                    &.verticalAlign {
+                        flex-direction: column;
+                    }
+
+                    .containerSingleIcon {
+                        width: 28%;
+                        margin: 0px auto;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .icon {
+                            width: 42px;
+                            height: 38px;
+                            margin-bottom: 15.4px;
+                            box-shadow: 0px 0px 1px 0.6px rgba($color: $negro-00, $alpha: 0.16);
+                            border-radius: 6px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            * {
+                                width: 55%;
+                                height: 55%;
+                            }
+
+                            &--bigIcon {
+                                box-shadow: none;
+
+                                * {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                        .text {
+                            font-size: $font-s - 2;
+                            width: 100%;
+                            margin: center;
+                        }
+
+                        &--alignHorizontal {
+
+                            width: 100%;
+                            justify-content: center;
+                            display: flex;
+                            align-items: center;
+
+                            &.mrgnBottom {
+                                margin-bottom: 15px;
+                            }
+
+                            .icon {
+                                width: 42px;
+                                min-width: 42px;
+                                height: 38px;
+                                margin-right: 12px;
+                                box-shadow: 0px 0px 1px 0.6px rgba($color: $negro-00, $alpha: 0.16);
+                                border-radius: 6px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                * {
+                                    width: 55%;
+                                    height: 55%;
+                                }
+
+                                &--bigIcon {
+                                    box-shadow: none;
+
+                                    * {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+
+                            .text {
+                                font-size: $font-s - 2;
+                                width: 100%;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+
+            hr {
+                margin: 15px auto;
+                width: 70%;
+                border: 1px solid rgba($color: $gris-57, $alpha: 0.1);
+            }
+
+            .containerCardFinal {
+                width: 100%;
+                margin: 0px auto 15px;
+                max-width: 400px;
+                background-color: $blanco-ff;
+                border-radius: 7px;
+                overflow: hidden;
+                position: relative;
+
+                .contendedDataCard {
+                    padding: 11px 5px 15px 5px;
+
+                    * {
+                        color: $gris-57;
+                    }
+
+                    .contSubTitleCard {
+                        .subTitleCard {
+                            margin: 0px auto 4px;
+                            width: fit-content;
+                            display: flex;
+                            align-items: flex-start;
+
+                            img {
+                                margin: 3px 7px 0px;
+                            }
+                        }
+
+                        p {
+                            font-size: $font-s;
+                        }
+
+                        .textBottom {
+                            p {
+                                font-size: $font-s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contVideo {
+        margin: 14px auto;
+
+        img {
+            width: 19px;
+            height: 19px;
+        }
+
+        * {
+            font-size: $font-p;
+        }
+    }
+}
+
+//Media utilizado para modificar el scroll en iphone5
+@media only screen and (max-width: 340px) {
+    .container__credit--popUp {
+        width: 90%;
+        margin-top: 60px;
+        overflow: initial;
+    }
+}
+
+.popupPartOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition-duration: .3s;
+    z-index: 9;
+
+    .subTitle {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 17.5px;
+
+        img {
+            margin: 3px 8px 0px 0px;
+        }
+
+        &--noMrgBottom {
+            margin-bottom: 1px;
+        }
+    }
+
+    &.activePopup {
+        opacity: 1;
+        pointer-events: inherit;
+    }
+}
+
+//Scroll 320
+@media only screen and (max-width: 340px) {
+    .popupPartOne {
+        overflow: scroll;
+    }
+}
+
+
+.popupPartTwo {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition-duration: .3s;
+    z-index: 9;
+
+    .subTitle {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 17.5px;
+
+        &--noMrgBottom {
+            margin-bottom: 1px;
+        }
+
+        &--widthFull {
+            width: 100%;
+        }
+
+        img {
+            margin: 3px 8px 0px 0px;
+        }
+    }
+
+    &.activePopup {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .popupPartTwo {
+        overflow: scroll;
+    }
+}
+
+.popupPartThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition-duration: .3s;
+    z-index: 9;
+
+    .subTitle {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 17.5px;
+
+        img {
+            margin: 3px 8px 0px 0px;
+        }
+
+        &--noMrgBottom {
+            margin-bottom: 1px;
+        }
+    }
+
+    &.activePopup {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+//Scroll para 320
+@media only screen and (max-width: 340px) {
+    .popupPartThree {
+        overflow: scroll;
+    }
+}
+
+//media for tooltips iPhone5
+@media only screen and (max-width: 320px) {
+    .container__credit {
+        .container__secundaryCredit {
+            .containerData__content {
+                padding: 40px 0 15px;
+
+                .containerIcon__Data {
+                    padding: 12px 5px 15px;
+                }
+            }
+        }
+    }
+}

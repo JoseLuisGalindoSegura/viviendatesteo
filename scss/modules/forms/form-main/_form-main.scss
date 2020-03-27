@@ -1,0 +1,243 @@
+//Formularios
+form {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    transition-duration: .3s;
+    //Container Iputs - !Importante!
+    .input{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 15px;
+        //Spans
+        span{
+            display: inline-block;
+            font-size: $font-p;
+            color: $negro-57;
+        }
+        .input{
+            margin-bottom: 0px;
+        }
+        input::after{
+            color: rgba($color: $gris-57, $alpha: .1);
+        }
+        &:last-child{
+            margin: 0px;
+        }
+        &--otp{
+            input{
+                text-align: center;
+                letter-spacing: 5px;
+                font-weight: bold;
+                color: $negro-57;
+                font-size: $font-p + 4;
+            }
+        }
+    }
+    .input2{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 15px;
+        background-color: #fdfdfd;
+        .label{
+            @include fuentesJD(14, 400, $gris-57, 16px);
+            margin-bottom: 0px;
+            &--top15{
+                margin-top: 15px;
+            }
+        }
+        
+        .descripcion{
+            @include fuentesJD(12, bold, $gris-57, 14px);
+            margin-top: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+            &--top0{
+                margin-top: 0px;
+            }
+            ul{
+                list-style-type: disc;
+                margin-left: 16px;
+                li{
+                    margin-bottom: 10px;
+                    @include fuentesJD(12, 400, $gris-57, 14px);
+                    &:last-of-type{
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+
+        .labelBold{
+            @include fuentesJD(14, bold, $gris-57, 16px);
+            margin-bottom: 0px;
+            margin-left: 8px;
+            &--left0{
+                margin-left: 0px;
+            }
+        }
+
+        .fristP{
+            @include fuentesJD(14, 400, $gris-57, 19px);
+            text-align: justify;
+            margin-bottom: 9px;
+            strong{
+                font-weight: bold;
+            }
+        }
+
+        hr{
+            width: 44.88%;
+            margin: 0px auto;
+            height: 1px;
+            background-color: rgba(112, 112, 112, 0.25);
+            margin-bottom: 13.5px;
+            margin-top: 15px;
+        }
+
+        //Spans
+        span{
+            display: inline-block;
+            font-size: $font-p;
+            color: $negro-57;
+        }
+        .input{
+            margin-bottom: 0px;
+        }
+        input::after{
+            color: rgba($color: $gris-57, $alpha: .1);
+        }
+        &--otp{
+            input{
+                text-align: center;
+                letter-spacing: 5px;
+                font-weight: bold;
+                color: $negro-57;
+                font-size: $font-p + 4;
+            }
+        }
+        &--sub{
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 0px;
+        }
+        &--bot0{
+            margin-bottom: 0px;
+        }
+        &--noBack{
+            margin-bottom: 0px;
+            background-color: initial;
+        }
+    }
+}
+
+//card adjutos modal
+.adjuntoModal{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    .label{
+        @include fuentesJD(16, bold, $negro-44, 16px);
+        margin-bottom: 3px;
+    }
+    .fristP{
+        @include fuentesJD(14, 400, $gris-57, initial);
+        text-align: justify;
+        margin-bottom: 9px;
+        strong{
+            font-weight: bold;
+        }
+    }
+
+    hr{
+        width: 44.88%;
+        margin: 0px auto;
+        height: 1px;
+        background-color: rgba(112, 112, 112, 0.25);
+        margin-bottom: 13.5px;
+    }
+
+    //Spans
+    span{
+        display: inline-block;
+        font-size: $font-p;
+        color: $negro-57;
+    }
+    .input{
+        margin-bottom: 0px;
+    }
+    input::after{
+        color: rgba($color: $gris-57, $alpha: .1);
+    }
+    &--otp{
+        input{
+            text-align: center;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color: $negro-57;
+            font-size: $font-p + 4;
+        }
+    }
+    &--sub{
+        margin-top: 14.5px;
+        padding: 13px 19px 15px 19px;
+        border-radius: 6px;
+        margin-bottom: 0px;
+    }
+}
+
+//Labels Inputs - Dejar por fuera para evitar complicaciones con otros labels como Radiobuttons o Checkbox
+label, .label{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+
+    font-family: $roboto;
+    font-size: $font-p;
+    color: $negro-57;
+    text-align: justify;
+    strong{
+        font-weight: bold;
+    }
+
+    &.left{
+        text-align: left;
+    }
+
+    &.center{
+        text-align: center;
+    }
+}
+
+//Gray boxes - inputs
+.boxForm-Group{
+    display: inline-block;
+    width: 100%;
+    background-color: $gris-ed;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    .boxForm__head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 2%;
+        text-align: center;
+        margin-bottom: 5px;
+        strong{
+            font-weight: bold;
+            color: $negro-57;
+            font-size: $font-p;
+        }
+        img{
+            display: inline-block;
+            width: 11px;
+            opacity: .5;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+<body>
+    <section class="container">
+        <div class="titlesHeader--Desktop">
+            <h1>Vivienda Móvil</h1>
+            <h3>Carta de aprobación</h3>
+        </div>
+
+        <div class="trackingMain trackingMain--mrgTopMax">
+            <div class="trackingMain__dataNav">
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+            </div>
+        </div>
+        <div class="contentBox">
+            <div class="simulation__container simulation__container--menosPdt">
+                <div class="simulation__secundary pdTopNull">    
+                    <div class="secundary__containerEnd pdTopNull">
+                        <div class="image">
+                            <img src="../images/descargasImg.jpeg" alt="" class="img">
+                        </div>
+                        <div class="secundary__title">
+                            <span>Esta es la <b>carta de aprobación de su cupo de 
+                                crédito.</b> Usted podrá presentarla como soporte
+                                de financiación para la compra de vivienda.</span>
+                            <a href="javascript:void(0)" class="buttonTooltip buttonTooltip--textPosition"><span class="icon-dv-tooltipInfo"></span></a>
+                            <div class="tooltip">
+                                <p>
+                                    Carta con el cupo financiero aprobado. Los valores registrados en este documento son en firme.
+                                    <br><br>
+                                    Recuerde presentar este documento de manera digital en una de nuestras oficinas para continuar con su proceso de vivienda.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="descargas">
+                           Descargar carta de aprobación
+                            de su cupo de crédito.
+                        </button>
+                       
+                    </div>
+                </div>
+                <p class="secundary__textDown fontMedio">
+                    Además, le hemos enviado una copia <br>
+                    al <b>correo que tiene registrado</b> con Davivienda.</p>
+            </div>
+        </div>
+        
+        <div class="contButtons">
+            <p class="textButton">Consulte <a href="./InversionesporObjetivos.html" class="links-internas"> aquí </a> las ciudades donde puede usar su
+                cupo de crédito para adquirir un inmueble.</p>
+            <hr>
+            <button type="button" class="button button--primary" onclick="showModal()">Continuar</button>
+        </div>
+    </section>
+    <!--Modal 1-->
+    <section class="contModal" id="modalDefault">
+        <div class="modal">
+            <h3 class="modal__title">¿Qué sigue?</h3>
+            <div class="modal__number">
+                <p class="modal__number-white" id="numberPag"></p>
+            </div>
+            <!--pop Uno-->
+            <div id="contentOne" class="modal__body modal__body--content activeModal">
+                <h4 class="center noMrgnTop">Lo invitamos a realizar el siguiente proceso:</h4>
+                <img class="mbrSemiTop" src="../images/v-icon-pop-CartaApobacion.svg" alt="">
+                <hr>
+                <p class="contTextInformation--mrgnBottom">Con la carta de aprobación de su cupo de 
+                    crédito, puede comenzar la búsqueda de la casa 
+                    o apartamento de sus sueños, <b> presentarla como 
+                    soporte de financiación </b> y así comenzar el 
+                    proceso de compra.</p>
+            </div>
+
+            <!--pop Dos-->
+            <div id="contentTwo" class="modal__body modal__body--content nullModal">
+                <img class="mbrTop" src="../images/v-icon-pop-CartaApobacion2.svg" alt="">
+                <hr>
+                <p class="contTextInformation--mrgnBottom">Una vez haya elegido la vivienda, 
+                    para comenzar el proceso de compra acérquese a 
+                    la oficina Davivienda de su preferencia y <b>haga 
+                    entrega de la información solicitada,</b> según el tipo de vivienda.</p>
+            </div>
+
+            <!--pop Tres-->
+            <div id="contentThree" class="modal__body modal__body--content nullModal">
+                <p class="contTextInformation--noMrgnTop contTextInformation--mrgnBottom">Puede consultar 
+                    <b>el estado en que se encuentra su crédito</b> y el proceso que 
+                    debe realizar ingresando al app <b>Davivienda Móvil</b>:</p>
+                <img class="mbrLowTop" src="../images/v-icon-pop-CartaApobacion3.svg" alt="">
+                <hr>
+                <p class="contTextInformation--backColor contTextInformation--mrgnTop">1. Ingrese al menú <b>Abrir productos en línea.</b></p>
+                <p class="contTextInformation--backColor">2. Seleccione la opción <b>Créditos móviles.</b></p>
+                <p class="contTextInformation--backColor">3. Ingrese a <b>Vivienda móvil.</b></p>
+            </div>
+
+            <div class="contButtons contButtons--sameWidth">
+                <!-- tracking Radios-->
+                <div class="trackingRadio">
+                    <div class="trackingRadio__dataNav">
+                        <a href="javascript:void(0)" id="tranckingOne" class="dataNav__step dataNav__step--active"></a>
+                        <a href="javascript:void(0)" id="tranckingTwo"  class="dataNav__step"></a>
+                        <a href="javascript:void(0)" id="tranckingThree" class="dataNav__step"></a>
+                    </div>
+                </div>
+                <!--Fin Trancking-->
+                <button type="button" id="bottonOne" class="button button--primary activeModaBotton" onclick="changeBox(); changeTrancking()"> Continuar</button>
+                <button type="button" id="bottonTwo" class="button button--primary" style="display: none;" onclick="changeBoxTwo(); changeTranckingTwo()"> Continuar</button>
+                <button type="button" id="bottonThree" class="button button--primary" style="display: none;" > Continuar</button>
+
+            </div>
+        </div>
+    </section>
+
+     
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

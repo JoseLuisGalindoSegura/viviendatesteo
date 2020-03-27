@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="titlesHeader--Desktop">
+            <h1>Vivienda Móvil</h1>
+            <h3>Valoración médica</h3>
+        </div>
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <div class="trackingMain">
+            <div class="trackingMain__dataNav">
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+            </div>
+        </div>
+        <h1 class="center noMrgnBottom">Proceso de valoración médica</h1>
+        <div class="contentBox">
+            <div class="information__container">
+                <p class="container__title">Este proceso es necesario para detallar las 
+                    condiciones del <strong>seguro de vida por parte de la 
+                    aseguradora. </strong> Para continuar ingrese la siguiente 
+                    información:
+                </p>
+                <form>
+                    <div class="input">
+                        <label for="actividad-laboral">¿Cuál es su peso actual?</label>
+                        <input type="text" id="PesoActual" value="" placeholder="Ingrese su peso en kg">
+                    </div>
+                    <div class="input">
+                        <label for="actividad-laboral">¿Cuál es su estatura?</label>
+                        <input type="text" id="PesoActual" value="" placeholder="Ingrese su estatura en cm">
+                    </div>
+                    <hr class="ceparador">
+                    <div class="iconosMedicos">
+                        <p class="container__title">Teniendo en cuenta sus respuestas afirmativas en la encuesta 
+                            de asegurabilidad, le solicitamos responder las siguientes preguntas adicionales:
+                        </p>
+                    </div>
+                </form>
+                <div class="inquiry__container">
+                    <div class="container">
+                        <form action="" class="question">
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seemore--firstCard" style="display: none;">Pregunta 1 de 5<span
+                                    class="icon-dv-showMore icon icon--isToggle"></span></a>
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seeless--firstCard">Pregunta 1 de 5<span
+                                    class="icon-dv-showLess icon icon--isToggle"></span></a>
+                            <div class="question__Confir__item--hidden" id="firstCard" style="display: block;">
+                                <div class="boxTitle">
+                                    <p class="title--ligth">
+                                        Accidentes cerebrovascular, trombosis,
+                                        enfermedad de las arterias o venas, derrame
+                                        cerebral, o artritis
+                                    </p>
+                                </div>
+
+                                <div class="data mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿El evento o el diagnóstico fue
+                                        hace más de 5 años?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mrgLeft">
+                                <div class="data">
+                                    <div class="text text--ligth">
+                                        ¿Tiene algún problema o dificultad para mover alguna parte del cuerpo, hablar o
+                                        coordinar?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="dir-two">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="dir-two">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mrgLeft">
+                                <div class="data">
+                                    <div class="text text--ligth">
+                                        ¿El accidente cerebrovascular fue
+                                        Isquemia Cerebral Transitoria?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="dir-three">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="dir-three">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="" class="question">
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seemore--secondCard">Pregunta 2 de 5<span
+                                    class="icon-dv-showMore icon icon--isToggle"></span></a>
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seeless--secondCard" style="display: none;">Pregunta 2 de 5<span
+                                    class="icon-dv-showLess icon icon--isToggle"></span></a>
+                            <div class="question__Confir__item--hidden" id="secondCard" style="display: none;">
+                                <div class="boxTitle">
+                                    <p class="title--ligth">
+                                        Diabetes, obesidad, enfermedades cardiovasculares o renales
+                                    </p>
+                                </div>
+                                <div class="data  mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿Ha estado en urgencias u hospitalizado por diabetes o enfermedad cardiovascular
+                                        o renal en los últimos 3 años?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q2dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q2dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="data  mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿Ha sufrido Infarto agudo del miocardio, ACV, enfermedad renal, de la retina, de
+                                        las válvulas del corazón, aneurisma aórtico,insuficiencia cardiaca congestiva,
+                                        parálisis o trastornos circulatorios?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q2dir-two">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q2dir-two">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="data  mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿ Su hemoglobina glicosilada en los últimos 6 meses ha sido igual o superior a
+                                        8?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q2dir-three">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q2dir-three">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="" class="question">
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seemore--threeCard">Pregunta 3 de 5<span
+                                    class="icon-dv-showMore icon icon--isToggle"></span></a>
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seeless--threeCard" style="display: none;">Pregunta 3 de 5<span
+                                    class="icon-dv-showLess icon icon--isToggle"></span></a>
+                            <div class="question__Confir__item--hidden" id="threeCard" style="display: none;">
+                                <div class="boxTitle">
+                                    <p class="title--ligth">
+                                        Algún tipo de cáncer, leucemia o linfoma
+                                    </p>
+                                </div>
+                                <div class="data  mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿Terminó el tratamiento de Cáncer hace 5 años o más?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q3dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q3dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="data  mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿Como parte del tratamiento le realizaron algún trasplante?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q3dir-two">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q3dir-two">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <form action="" class="question">
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seemore--fourCard">Pregunta 4 de 5<span
+                                    class="icon-dv-showMore icon icon--isToggle"></span></a>
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seeless--fourCard" style="display: none;">Pregunta 4 de 5<span
+                                    class="icon-dv-showLess icon icon--isToggle"></span></a>
+                            <div class="question__Confir__item--hidden" id="fourCard" style="display: none;">
+                                <div class="boxTitle">
+                                    <p class="title--ligth">
+                                        HIV positivo o SIDA
+                                    </p>
+                                </div>
+                                <div class="data mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿Está en tratamiento con antirretrovirales y su carga viral ha sido indetectable
+                                        en los últimos 6 meses?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q4dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q4dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="" class="question">
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seemore--fiveCard">Pregunta 5 de 5<span
+                                    class="icon-dv-showMore icon icon--isToggle"></span></a>
+                            <a href="javascript:void(0)" class="question__ConfirToggle optionCard__seeMore clicked"
+                                id="seeless--fiveCard" style="display: none;">Pregunta 5 de 5<span
+                                    class="icon-dv-showLess icon icon--isToggle"></span></a>
+                            <div class="question__Confir__item--hidden" id="fiveCard" style="display: none;">
+                                <div class="boxTitle">
+                                    <p class="title--ligth">
+                                        Depresión o ansiedad en los últimos 10 años
+                                    </p>
+                                </div>
+                                <div class="data mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿Está en tratamiento médico y ha estado hospitalizado por esta causa en los
+                                        últimos 2 años o ha tenido intento de suicidio?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q5dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="dq5dir-one">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="data mrgTop">
+                                    <div class="text text--ligth">
+                                        ¿Está en tratamiento médico pero NO ha estado hospitalizado por esta causa en
+                                        los últimos 2 años, y NO ha tenido intento de suicidio?
+                                    </div>
+                                    <div class="contRadio">
+                                        <div class="radioInput">
+                                            <div class="input">
+                                                <div class="inputCont">
+                                                    <p>Sí</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q5dir-two">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                                <div class="inputCont">
+                                                    <p>No</p>
+                                                    <label class="radio">
+                                                        <input type="radio" value="" name="q5dir-two">
+                                                        <div class="radio__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contButtons">
+            <button type="button" class="button button--secondary button--back">Regresar</button>
+            <button type="button" id="validateObjectives" class="button button--primary" onclick="showModalMedica()">Continuar</button>
+        </div>
+    </section>
+    <!--Modal-->
+    <section class="contModal" id="modalValoracionMedica">
+        <div class="modal modal--ligth">
+            <div class="modal__body">
+                <p><strong>¿Qué sigue?</strong></p>
+            </div>
+            <div class="boxOscuro">
+                <h2 class="title center"> La aseguradora realizará la valoración médica</h2>
+
+                <div class="imagen">
+                    <img src="../images/icon-vv-validacionMedica.svg" alt="">
+                </div>
+
+                <hr class="ceparador">
+
+                <p class="parrafoBasico">En máximo un día hábil recibirá una notificación <br>
+                   <strong>con el resultado de la valoración.</strong> 
+                    <br>
+                    <br>
+                    Tenga presente que la Aseguradora puede solicitarle iniciar un <strong> proceso de exámenes médicos complementarios </strong>para otorgar una respuesta definitiva.</p>
+
+            </div>
+            <div class="contButtons">
+                <button type="button" class="button button--secondary button--back">Regresar</button>
+                <button type="button" class="button button--primary">Aceptar</button>
+            </div>
+        </div>
+    </section>
+    <!--modal final-->
+
+    <script type="text/javascript">
+
+        //funcion de pop up Valoracion medica
+        function showModalMedica(){
+            document.getElementById('modalValoracionMedica').classList.add('contModal--isShow');
+            body.classList.add('is--scrollLocked');
+        }
+
+        function hideModalMedica(){
+            document.getElementById('modalValoracionMedica').classList.remove('contModal--isShow');
+            body.classList.remove('is--scrollLocked');
+        }
+
+        //acordion x 5
+
+        document.getElementById('seemore--firstCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--firstCard').style.display = '';
+            document.getElementById('firstCard').style.display = '';
+        }
+        document.getElementById('seeless--firstCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--firstCard').style.display = '';
+            document.getElementById('firstCard').style.display = 'none';
+        }
+
+        document.getElementById('seemore--secondCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--secondCard').style.display = '';
+            document.getElementById('secondCard').style.display = '';
+        }
+        document.getElementById('seeless--secondCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--secondCard').style.display = '';
+            document.getElementById('secondCard').style.display = 'none';
+        }
+
+        document.getElementById('seemore--threeCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--threeCard').style.display = '';
+            document.getElementById('threeCard').style.display = '';
+        }
+        document.getElementById('seeless--threeCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--threeCard').style.display = '';
+            document.getElementById('threeCard').style.display = 'none';
+        }
+
+        document.getElementById('seemore--fourCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--fourCard').style.display = '';
+            document.getElementById('fourCard').style.display = '';
+        }
+        document.getElementById('seeless--fourCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--fourCard').style.display = '';
+            document.getElementById('fourCard').style.display = 'none';
+        }
+
+        document.getElementById('seemore--fiveCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--fiveCard').style.display = '';
+            document.getElementById('fiveCard').style.display = '';
+        }
+        document.getElementById('seeless--fiveCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--fiveCard').style.display = '';
+            document.getElementById('fiveCard').style.display = 'none';
+        }
+    </script>
+
+<script>
+    function changeButtonAccident(){
+        let checkedTrue = document.querySelector('#yes:checked');
+    if (checkedTrue) {
+        document.getElementById('validateObjectives').classList.remove('button--secondary');
+        document.getElementById('validateObjectives').classList.add('button--primary');
+        console.log('lala');
+
+    }
+    else if(!checkedTrue) {
+        document.getElementById('validateObjectives').classList.remove('button--primary');
+        document.getElementById('validateObjectives').classList.add('button--secondary');
+    }
+    }
+                                                            
+    const form = document.getElementById('wrapper');
+    form.addEventListener('change', function(){
+    let checkedTrue = document.querySelector('#yes:checked');
+    if (checkedTrue) {
+        document.getElementById('validateObjectives').classList.remove('button--secondary');
+        document.getElementById('validateObjectives').classList.add('button--primary');
+        console.log('lala');
+
+    }
+    else if(!checkedTrue) {
+        document.getElementById('validateObjectives').classList.remove('button--primary');
+        document.getElementById('validateObjectives').classList.add('button--secondary');
+    }
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+//============ Modules SCSS ============
+
+
+//-------- Tracking SCSS
+@import 'tracking/_tracking';
+
+
+//-------- Back Button SCSS
+@import 'back-button/_back-button';
+
+
+//-------- box Main SCSS
+@import 'box-main/_box-container';
+
+
+//-------- Container Benefits Generales SCSS
+@import 'benefits/_benefits';
+
+
+//-------- Container SimulationVivienda Generales SCSS
+@import 'simulation/_simulation';
+
+
+//-------- Container SeleccionVivienda General SCSS
+@import 'selection/_selection';
+
+
+//-------- Container EncuestaVivienda General SCSS
+@import 'inquiry/inquiry';
+
+
+//-------- Container MovileVideosVivienda General SCSS
+@import 'movile/movile';
+
+
+//-------- Container InformacionVivienda General SCSS
+@import 'information/information';
+
+
+//-------- Container EstudioCreditoVivienda General SCSS
+@import 'studycredit/studycredit';
+
+
+//-------- Container EstadoCreditoVivienda General SCSS
+@import 'credit-status/credit-status';
+
+
+//-------- Titles SCSS
+@import 'titles/_titles';
+
+
+//-------- Tooltips SCSS
+@import 'tooltips/_tooltips';
+
+
+//-------- Forms SCSS
+@import 'forms/_form';
+
+
+//-------- Toggle Button SCSS
+@import 'toggleButton/_togglebutton';
+
+
+//-------- Confirmations SCSS
+@import 'confirmations/_confirmations';
+
+
+//-------- Results SCSS
+@import 'results/_result';
+
+
+//-------- Terms (Terminos y Condiciones) SCSS
+@import 'terms/_terms';
+
+
+//-------- Loader SCSS
+@import 'loader/_loader';
+
+
+//-------- Modals SCSS
+@import 'modals/_modals';
+
+
+//-------- Item Cards SCSS
+@import 'cardsItems/_cardsItemBanks';
+
+
+//-------- Support (Atención en Linea) SCSS
+@import 'support/_support';
+
+
+//----- Valoracio  Medica
+
+@import 'valoracion/valoracion';
+
+//------ Pdf
+
+@import 'Pdf/_pdf';

@@ -1,0 +1,13 @@
+.movile__container{
+    .container__title{
+        font-size: $font-p;
+        text-align: left;
+        color: $gris-57;
+    }
+    .container__video{
+        width: 100%;
+        height: 45vw;
+        border: 1px solid;
+        margin: 19px auto;
+    }
+}

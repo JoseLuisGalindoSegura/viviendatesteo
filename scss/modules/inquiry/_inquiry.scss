@@ -1,0 +1,124 @@
+.inquiry__container{
+    .noMrgnTop{
+        margin-bottom: 8px;
+        position: relative;
+        img{
+            position: absolute;
+            right: -5px;
+            top: -15px;
+        }
+    }
+    .question{
+        & *{
+            color: $gris-57;
+        }
+        &__ConfirToggle{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            margin: 7px 0px 0px;
+            background-color: $gris-ed;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition-duration: .2s;
+            text-align: left;
+            color: $negro-57;
+            font-size: $font-p;
+            color: $negro-57;
+            transition-duration: .2s;
+            &:hover{
+                background-color: darken($gris-ed, 5%);
+            }
+            .icon--isToggle{
+                font-size: $font-p + 1.5;
+            }
+        }
+        &__Confir__item{
+            &--hidden{
+                box-shadow: 0px 1px 3px rgba($color: $gris-57, $alpha: .5);
+                background-color: $blanco-ff;
+                padding: 13px 11px 27px 12px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                width: 95%;
+                margin: auto;
+                & *{
+                    font-size: 14px;
+                }
+                .title{
+                    width: 100%;
+                    text-align: left;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+                .data{
+                    width: 100%;
+                    display: flex;
+                    .text{
+                        width: 80%;
+                        text-align: left;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .contRadio{
+                        width: 20%;
+                        margin-left: 5px;
+                        .radioInput{
+                            height: 100%;
+                            .input{
+                                display: flex;
+                                height: 100%;
+                                justify-content: center;
+                                .inputCont{
+                                    width: min-content;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    & > p{
+                                        display: flex;
+                                        text-align: center;
+                                        justify-content: center;
+                                        height: min-content;
+                                        display: block;
+                                    }
+                                    & > label{
+                                        display: flex;
+                                        justify-content: center;
+                                        margin: 0px 0px 0px 5px;
+                                        height: 20px;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                hr{
+                    width: 40%;
+                    border: 1px solid rgba($color: $gris-57, $alpha: .1);
+                    margin: 10px 0px 10px 5px;
+                    border-radius: 100px;
+                    &:first-of-type{
+                        color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .boxTitle{
+        background-color: $gris-fc;
+        padding: 8px 11px 10px 10px;
+        .title--ligth{
+            text-align: left;
+        }
+    }
+}
+.textButton{
+    font-size: $font-s;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}

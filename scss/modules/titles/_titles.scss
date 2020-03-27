@@ -1,0 +1,212 @@
+//Titulos genericos para todos los elementos
+h1, h2, h3, h4 {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+    font-family: $roboto;
+    font-size: $font-p;
+    font-weight: bold;
+    color: $negro-57;
+    b{
+        font-size: $font-p; 
+    }
+    //Se añade la etiqueta strong para agregar un bold a las partes del texto requeridas
+    strong{
+        font-weight: bold;
+    }
+    //Clases usables en todos los elementos del corte
+    //.main -> De los titulos mas usados en toda la interface
+    &.main {
+        text-align: center;
+        font-size: $font-p + 2;
+    }
+    //.light -> Fuente light
+    &.light {
+        font-weight: 100;
+    }
+    //.regular -> Fuente regular
+    &.regular {
+        font-weight: normal;
+    }
+    //.justify -> Justificar texto
+    &.justify {
+        text-align: justify;
+    }
+    &.mrgnConfirmation{
+        margin: 4px auto 16px;
+    }
+    //.short -> Width más angosto
+    &.short {
+        width: 65%;
+    }
+    //.width80
+    &.width80{
+        width: 80%;
+    }
+
+    &.noFullWidth{
+        width: 95%;
+    }
+    //.center -> Centrar el texto del titulo
+    &.center {
+        text-align: center;
+    }
+    //.noMrgnTop -> 0 de margen arriba
+    &.noMrgnTop{
+        margin-top: 0;
+    }
+    //.noMrgnBottom -> 0 de margen abajo
+    &.noMrgnBottom{
+        margin-bottom: 0;
+    }
+    // margin nminimi ->12
+    &.mrgnTopMini{
+        margin-top: 12px;
+    }
+    &.mrgnBottoMini{
+        margin-bottom: 12px;
+    }
+    //.noMrgn -> 0 de margen de todos los lados
+    &.noMrgn{
+        margin: 0;
+    }
+    //En caso de tener un titulo regular se incuye in Strong cuando sea necesario
+    strong{
+        font-weight: bold;
+    }
+    //.smallText en caso de que el texto sea mas pequeño
+    &.smallText{
+        font-size: $font-s;
+        *{
+            font-size: $font-s;
+        }
+        &--forRefWarranty{
+            width: 80%;
+            font-weight: 400;
+            margin-bottom: 5px;
+            b{
+                font-weight: bold;
+            }
+        }
+    }
+    // Se crea para ajustar el texto footer de ciertas carts credito
+    &.footText{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 11px;
+    }
+
+    &.widthone{
+        line-height: 1;
+    }
+
+    &.alturafija{
+        height: 47px;
+    }
+    //Se agrega esta clase para los pop ups de 3 y asi otorgarles una altura fija que corresponda al diseño
+    &.sinmargeninferior{
+        margin: 20px 0 0 0 ;
+    }
+    &.minMargin{
+        margin: 6px 0 0 0;
+    }
+}
+
+//aliniacion de textos y titles
+.left{
+    text-align: left;
+}
+
+.mrgBotton{
+    margin-bottom: 10px;
+}
+
+
+
+/* Textos de ayuda helpers 10px - 14px | Generalmemnte van fuera de los boxes o
+en algunos casos dentro de los mismos */
+.contTextInformation{
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    margin: 15px 0;
+
+    &--mrgnTop{
+        margin-top: 15px;
+    }
+    &--mrgnBottom{
+        margin-bottom: 15px;
+    }
+    &--noMrgnTop{
+        margin-top: 0;
+    }
+    &--noMrgnBottom{
+        margin-bottom: 0;
+    }
+
+    &--widthLigth{
+        line-height: 1;
+        height: 70px;
+    }
+
+    &--backColor{
+        background-color: $blanco-f8;
+        padding: 1.5px 10px;
+        font-size: $font-s !important;
+        margin: 0px 0px 5px;
+        width: 100%;
+        text-align: left;
+        border-radius: 5px;
+    }
+    &--big{
+        p{
+            font-size: $font-p;
+            strong{
+                font-size: $font-p;
+            }
+        }
+    }
+    p{
+        font-size: $font-p - 2;
+        color: $negro-57;
+        strong{
+            font-weight: bold;
+        }
+    }
+}
+
+//Titulos usados solo para web
+.titlesHeader--Desktop{
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0 25px 0;
+    h1{
+        font-size: $font-h + 4;
+        margin: 0;
+        color: $rojo;
+    }
+    h3{
+        font-size: $font-p + 4;
+        color: $negro-00;
+        margin: 0;
+        font-weight: bold;
+    }
+}
+
+.links-internas{
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.mrgTop{
+    margin-top: 15px;
+}
+
+.mrgBotton{
+    margin-bottom: 5px;
+}

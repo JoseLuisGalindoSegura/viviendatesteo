@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="titlesHeader--Desktop">
+            <h1>Vivienda Móvil</h1>
+            <h3>Información</h3>
+        </div>
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <div class="trackingMain">
+            <div class="trackingMain__dataNav">
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+            </div>
+        </div>
+        <div class="contentBox">
+            <div class="information__container">
+                <p class="container__title">Ingrese los siguientes datos para continuar con la solicitud de su crédito:
+                </p>
+                <form>
+                    <div class="input">
+                        <label for="actividad-laboral">¿Cuál es su actividad laboral?</label>
+                        <select name="" id="actividad-laboral">
+                            <option value="-1" selected disabled>Seleccione una opción</option>
+                            <option value="1">Empleado</option>
+                            <option value="2">Independiente</option>
+                            <option value="3">Pensionado</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="actividad-laboral">¿Cuál es su tipo de contrato?</label>
+                        <select name="" id="actividad-laboral">
+                            <option value="-1" selected disabled>Seleccione una opción</option>
+                            <option value="1">Indefinido</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="actividad-laboral">¿Cúal es su actividad economica?</label>
+                        <select name="" id="actividad-laboral">
+                            <option value="-1" selected disabled>Seleccione una opción</option>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="ingresos-mensuales">¿Cuál es su ingreso mensual?</label>
+                        <input type="number" id="ingresos-mensuales" value="" placeholder="Ingrese un valor">
+                    </div>
+                    <div class="input">
+                        <label for="adressDefault">¿Cuál es su ciudad de residencia?</label>
+                        <input type="text" id="adressDefault" value="Bogotá" disabled>
+                        <a href="javascript:void(0)" title="Editar" class="input__buttonAction"
+                            id="triggerChangeAddress"><span class="icon-dv-edit"></span></a>
+                        <div id="adressAltern" style="display: none;">
+                            <input type="text" value="151">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="adressDefault">¿Cuál es su dirección de residencia?</label>
+                        <input type="text" id="adressDefaultView" value="Carrera 13B # 54 - 96" disabled>
+                        <a href="javascript:void(0)" title="Editar" class="input__buttonAction" id="triggerChangeAddress" onclick="changeUpdateAddress()">
+                            <span class="icon-dv-edit" id="iconPencil"></span>
+                        </a>
+                        <div id="changeAddressUpdate" style="display: none;">
+                            <div class="input--fluidBigger" id="changeAddressUpdate">
+                                <select name="">
+                                    <option value="-1" selected="">Carrera</option>
+                                    <option value="1">Opción 1</option>
+                                    <option value="2">Opción 2</option>
+                                </select>
+                                <input type="text" value="13B">
+                                <span>#</span>
+                                <input type="text" value="54">
+                                <span>-</span>
+                                <input type="text" value="96">
+                            </div>
+                            <div class="input--altern" id="changeAddressUpdate">
+                                <label for="add-address">Torre / Piso / Apartamento / Otro:
+                                </label>
+                                <input type="text" id="add-address" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="num-ases">Si está recibiendo ayuda de un <strong>asesor del Banco</strong>, ingrese
+                            el código del asesor.</label>
+                        <div class="input">
+                            <input type="number" id="num-ases" value="" placeholder="Opcional">
+                            <a href="javascript:void(0)" class="buttonTooltip">
+                                <span class="icon-dv-tooltipAsk"></span>
+                            </a>
+                            <div class="tooltip">
+                                <p>
+                                    Si le prestaron asesoría, ingrese el código del
+                                    asesor comercial que lo está ayudando con esta
+                                    solicitud; de lo contrario, no diligencie este
+                                    espacio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label class="checkbox">
+                            Acepto el tratamiento de mis datos personales para las siguientes <b>finalidades</b> y la consulta y reporte ante centrales de informacion
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contButtons">
+            <button type="button" class="button button--secondary button--back">Regresar</button>
+            <button type="button" class="button button--primary">Continuar</button>
+        </div>
+    </section>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

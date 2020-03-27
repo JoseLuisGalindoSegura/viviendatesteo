@@ -1,0 +1,231 @@
+//-------------------------- Modal
+.contModal{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: $roboto;
+    z-index: 999;
+    
+    pointer-events: none;
+    opacity: 0;
+    transition-duration: .3s;
+
+    .modal{
+        display: inline-block;
+        width: 85%;
+        min-width: 310px;
+        max-width: 450px;
+        background: $blanco-f8;
+        padding: 11px;
+        margin: 0 auto;
+        border-radius: 6px;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        transition-duration: .3s;
+
+        &__number{
+            position: relative;
+
+                &-white{
+                    font-size: 14px;
+                    position: absolute;
+                    right: 14px;
+                    top: -22px;
+                    color: $blanco-ff;                
+                }
+
+                &::before{
+                    content: '';
+                    width: 40px;
+                    background-color: rgba(87, 87, 86, 0.24);
+                    height: 32px;
+                    position: absolute;
+                    top: -32px;
+                    right: 6px;
+                    border-top-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                }
+        }
+
+        &--ligth{
+            width: 95%;
+
+        }
+        &--certificado{
+            width: 77%;
+            min-width: 292px;
+            padding: 20px 25px 26px 25px;
+        }
+
+        &--certificado2{
+            width: 94.7%;
+            min-width: 292px;
+            padding: 14px 16px 15px 11px;
+        }
+
+        &__tBold{
+            @include fuentesJD(18, bold, $negro-44, 18px);
+            text-align: center;
+        }
+
+        &__title{
+            font-size: $font-p +4;
+            text-align: center;
+            margin: 0 0 15px;
+        }
+
+        .modal__body{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+
+            &--content{
+                background-color: $gris-ee;
+                border-radius: 5px;
+                padding: 15px 14px;
+
+                hr{
+                    width: 60%;
+                    border: 1px solid rgba(87, 87, 87, 0.1);
+                    margin: 11px auto;
+                }
+
+                &.activeModal{
+                    display: block;
+                }
+        
+                &.nullModal{
+                    display: none;
+                }
+                
+            }
+
+            p, strong{
+                display: inline-block;
+                font-size: $font-p;
+                color: $negro-57;
+            }
+            
+            strong{
+                font-weight: bold;
+            }
+        }
+
+        .bodyAlert{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+
+            &--content{
+                background-color: $gris-ee;
+                border-radius: 5px;
+                padding: 15px 14px;
+
+                hr{
+                    width: 60%;
+                    border: 1px solid rgba(87, 87, 87, 0.1);
+                    margin: 11px auto;
+                }
+
+                &.activeModal{
+                    display: block;
+                }
+        
+                &.nullModal{
+                    display: none;
+                }
+                
+            }
+
+            p, strong{
+                display: inline-block;
+                @include fuentesJD(16, 400, $negro-44, 16px);
+            }
+            
+            strong{
+                font-weight: bold;
+            }
+        }
+
+        .bodyCard{
+            background-color: $gris-ee;
+            @include flexBox-center;
+            flex-direction: column;
+            height: 265.64px;
+            &__img{
+                width: 61px;
+                height: 72px;
+                margin-top: 27px;
+                margin-bottom: 30.5px;
+            }
+
+            h2{
+                @include fuentesJD(14, bold, $negro-44, 14px);
+                text-align: center;
+                margin: 20px 0px;
+            }
+            p{
+                @include fuentesJD(14, 400, $negro-44, 14px);
+                text-align: center;
+                strong{
+                    font-weight: bold;
+                }
+            }
+            hr{
+                height: 1px;
+                width: 54.3%;
+                background-color: #707070;
+                opacity: 0.3;
+                margin-bottom: 16px;
+            }
+        }
+        
+        .contButtons{
+            margin: 0 0;
+            .button{
+                margin: 20px 2% 0;
+                &--certifica{
+                    margin: 0px;
+                    width: 33.9%;
+                }
+            }
+            &--modal{
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+//Evento mostrar Modal
+.contModal--isShow{
+    opacity: 1;
+    pointer-events: inherit;
+    .modal{
+        top: 50%;
+    }
+}
+
+.is--scrollLocked{
+    overflow-y: hidden;
+}
+.mbrSemiTop{
+    margin-top: 20px;
+}
+.mbrLowTop{
+    margin-top: 10px;
+}
+.mbrTop{
+    margin-top: 65px;
+}
+//Estea propiedad se define para los marqueges de los iconos en los pop up 2 y 3
+.mbrTopMax{
+    margin-top: 105px;
+    margin-bottom: 12px;
+}

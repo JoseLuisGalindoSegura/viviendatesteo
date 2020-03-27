@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+<body>
+    <!--Modal 1-->
+    <section class="contModal contModal--isShow" id="modalDefault">
+        <div class="modal modal--ligth">
+            <h3 class="modal__title">Valoración médica</h3>
+            <div class="modal__number">
+                <p class="modal__number-white" id="numberPag"></p>
+            </div>
+            <!--pop Uno-->
+            <div id="contentOne" class="boxOscuro boxOscuro--tamañoFijo modal__body modal__body--mrgbtt modal__body--content activeModal">
+                <h4 class="center widthone alturafija minMargin">Según la información que nos suministró para 
+                    obtener su crédito lo invitamos a realizar el 
+                    siguiente proceso: </h4>
+                <div class="imagen imagen--mrgtopMax imagen--mrgbottom">
+                    <img class="" src="../images/icon-vv-calendario.svg" alt="">
+                </div>
+                <hr >
+                <p class="contTextInformation--mrgnBottom contTextInformation--widthLigth">
+                    La aseguradora se comunicará con usted en máximo un <b> día hábil </b>  y le asignará una cita con el fin de realizarle los <b> exámenes médicos necesarios </b>para continuar.
+                </p>
+            </div>
+
+            <!--pop Dos-->
+            <div id="contentTwo" class="boxOscuro boxOscuro--tamañoFijo modal__body modal__body--mrgbtt modal__body--content nullModal">
+                <img class="mbrTopMax" src="../images/icon-vv-cruz.svg" alt="">
+
+                <p class="contTextInformation--mrgnBottom contTextInformation--widthLigth">
+                    Usted debe <b> asistir a la cita acordada</b> para 
+                    realizarse los exámenes médicos pertinentes.
+                </p>
+            </div>
+
+            <!--pop Tres-->
+            <div id="contentThree" class="boxOscuro boxOscuro--tamañoFijo modal__body  modal__body--mrgbtt modal__body--content nullModal">
+                <img class="mbrTopMax" src="../images/icon-vv-validacionMedica.svg" alt="">
+
+                <p class="contTextInformation--mrgnBottom contTextInformation--widthLigth">
+                    Una vez se realice los exámenes médicos, la aseguradora le enviará <b> los resultados 
+                    por medio de un mensaje de texto </b>al celular registrado y de la App Davivienda Móvil.
+                </p>
+            </div>
+
+            <div class="contButtons contButtons--sameWidth">
+                <!-- tracking Radios-->
+                <div class="trackingRadio">
+                    <div class="trackingRadio__dataNav">
+                        <a href="javascript:void(0)" id="tranckingOne" class="dataNav__step dataNav__step--active"></a>
+                        <a href="javascript:void(0)" id="tranckingTwo"  class="dataNav__step"></a>
+                        <a href="javascript:void(0)" id="tranckingThree" class="dataNav__step"></a>
+                    </div>
+                </div>
+                <!--Fin Trancking-->
+                <button type="button" id="bottonOne" class="button button--primary activeModaBotton" onclick="changeBox(); changeTrancking()"> Continuar</button>
+                <button type="button" id="bottonTwo" class="button button--primary" style="display: none;" onclick="changeBoxTwo(); changeTranckingTwo()"> Continuar</button>
+                <button type="button" id="bottonThree" class="button button--primary" style="display: none;" > Continuar</button>
+
+            </div>
+        </div>
+    </section>
+
+     
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+.studyCredit__container{
+
+    & *{
+        font-size: $font-p;
+        color: $gris-57;
+    }
+    //se crea para el container de respuesta en zonas grises
+    .allContainer{
+        background-color: #f8f8f8;
+        margin: 15px 10px;
+        padding: 1px 0px 10px;
+    }
+
+    .container_checkData{
+        width: 85%;
+        padding: 6px 14.8px 6px 6px;
+        margin: 10px auto 0px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        text-align: left;
+        display: flex;
+
+        .icon{
+            font-size: $font-h + 12.7;
+            width: auto;
+            height: auto;
+            margin: 0px;
+        }
+        .checkData__text{
+            font-size: $font-p;
+            text-align: left;
+            width: auto;
+            padding-left: 10.3px;
+            strong{
+                font-size: $font-h - 2;
+                font-weight: bold;
+            }
+            p{
+                margin: 6px 0px 0px;
+
+                &.mrgBottoMax{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .container_radioBox{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        &--JtsCenter{
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container__radioPrimary{
+            width: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0px auto 15px;
+            height: min-content;
+
+            &--sinMrg{
+                margin: 0 0 15px;
+            }
+
+            & > h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (min-width: 879px){
+                    & {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 34px;
+                    }
+                }
+            }
+            .text{
+                text-align: left;
+            }
+            .input{
+                width: 278.31px;
+                height: 234px;
+                background-color: $blanco-ff;
+                border-radius: 6px;
+                box-shadow: 0px 1px 2px rgba($color: $gris-57, $alpha: 0.3);
+                .radio--optionCard--toggle{
+                    position: relative;
+                    display: block;
+                    padding: 0px;
+                    box-shadow: none;
+                    margin: 0px;
+                    .optionCard__dataTop{
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        width: 100%;
+                        height: 80px;
+                        overflow: hidden;  
+                        border-radius: 6px;
+                        border-bottom-left-radius: 50% 10px;
+                        border-bottom-right-radius: 50% 10px;                      
+                        .radio__indicator{
+                            z-index: 1;
+                            margin-left: 10px;
+                        }
+                        .optionCard__info{
+                            width: 70%;
+                            z-index: 1;
+                            padding-left: 30px;
+
+                            &--sinWidth{
+                                width: auto;
+                                margin: 0 auto;
+                                padding: 0 45px;
+                                line-height: 1;
+                            }
+
+                            *{  
+                                text-align: center;
+                                font-size: $font-p;
+                                color: $blanco-ff;
+                            }
+                            & > .br{
+                                height: 5px;
+                            }
+                        }
+                        .img{
+                            position: absolute;
+                            left: 0px;
+                            width: 100%;
+                            height: 100%;
+                            background-size: 130%;
+                            background-position-y: 30%;
+                            background-position-x: center;
+                        }
+                    }
+                }
+                .optionCard__dataMedium{
+                    padding: 9.5px 0px 20px;
+                    hr{
+                        border: 1px solid rgba($color: $gris-57, $alpha: 0.1);
+                        margin: 9.6px 44.4px 18.4px 20.2px;
+                        width: 227px;
+                    }
+                    .text{
+                        padding: 0px 0px 0px 11px;
+                        display: flex;
+                        .itemIcon{
+                            font-size: $font-p - 2;
+                            margin-right: 5px;
+                            position: relative;
+                            transition-duration: .2s;
+                            display: inline-flex;
+                            padding-top: 5px;
+                            .icon-dv-listItemB{
+                                font-size: $font-s - 5;
+                            }
+                            .iconImage{
+                                margin-top: -2px;
+                                width: 9px;
+                                height: 9px;
+                            }
+                        }
+                        .containerText{
+                            display: flex;
+                            flex-direction: column;
+                            .br{
+                                height: 5px !important;
+                            }
+                            .buttonTooltip{
+                                width: min-content;
+                                height: 13px;
+                            }
+                            .icon-dv-tooltipInfo{
+                                font-size: $font-s + 1;
+                            }
+                        }
+                        & > p{
+                            margin-bottom: 5px;
+                            &:last-of-type{
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .container__radioSecundary{
+            margin: 0px auto;
+            width: min-content;
+            max-width: 100%;
+            position: relative;
+
+            &--sinMgr{
+                margin: 0px;
+            }
+
+            .text{
+                text-align: left;
+            }
+            & > h2{
+                padding: 0px 30px;
+                margin-top: 31px;
+                @media screen and (min-width: 879px){
+                    &{
+                        margin-top: 0px;
+                    }
+                }
+            }
+            .scroll{
+                width: 100%;
+                min-width: 375px;
+                max-width: 375px;
+                height: 255px;
+                display: flex;
+                justify-content: center;
+                @media screen and (min-width: 650px){
+                    max-width: 600px;
+                }
+                .swiper-container {
+                    width: 100%;
+                    overflow: visible;
+                    .swiper-wrapper {
+                        overflow: visible;
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        display: flex;
+                        transition-property: transform;
+                        box-sizing: content-box;
+                        .swiper-slide {
+                            flex-shrink: 0;
+                            width: 100%;
+                            min-width: 299px;
+                            height: 100%;
+                            position: relative;
+                            transition-property: transform;
+
+                            .input{
+                                width: 278.31px;
+                                height: 234px;
+                                background-color: $blanco-ff;
+                                border-radius: 6px;
+                                box-shadow: 0px 1px 2px rgba($color: $gris-57, $alpha: 0.3);
+                                .radio--optionCard--toggle{
+                                    position: relative;
+                                    display: block;
+                                    padding: 0px;
+                                    box-shadow: none;
+                                    margin: 0px;
+                                    .optionCard__dataTop{
+                                        display: flex;
+                                        align-items: center;
+                                        position: relative;
+                                        width: 100%;
+                                        height: 80px;
+                                        overflow: hidden;  
+                                        border-radius: 6px;
+                                        border-bottom-left-radius: 50% 10px;
+                                        border-bottom-right-radius: 50% 10px;                      
+                                        .radio__indicator{
+                                            z-index: 1;
+                                            margin-left: 10px;
+                                        }
+                                        .optionCard__info{
+                                            width: 70%;
+                                            z-index: 1;
+                                            padding-left: 30px;
+                                            *{  
+                                                text-align: center;
+                                                font-size: $font-p;
+                                                color: $blanco-ff;
+                                            }
+                                            & > .br{
+                                                height: 5px;
+                                            }
+                                        }
+                                        .img{
+                                            position: absolute;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-size: 130%;
+                                            background-position-y: 30%;
+                                            background-position-x: center;
+                                        }
+                                    }
+                                }
+                                .optionCard__dataMedium{
+                                    padding: 9.5px 0px 20px;
+                                    hr{
+                                        border: 1px solid rgba($color: $gris-57, $alpha: 0.1);
+                                        margin: 9.6px 44.4px 18.4px 20.2px;
+                                        width: 227px;
+                                    }
+                                    .text{
+                                        padding: 0px 0px 0px 11px;
+                                        display: flex;
+                                        .itemIcon{
+                                            font-size: $font-p - 2;
+                                            margin-right: 5px;
+                                            position: relative;
+                                            transition-duration: .2s;
+                                            display: inline-flex;
+                                            padding-top: 5px;
+                                            .icon-dv-listItemB{
+                                                font-size: $font-s - 5;
+                                            }
+                                            .iconImage{
+                                                margin-top: -2px;
+                                                width: 9px;
+                                                height: 9px;
+                                            }
+                                        }
+                                        .containerText{
+                                            display: flex;
+                                            flex-direction: column;
+                                            .title{
+                                                font-size: $font-p;
+                                                font-weight: bold;
+                                            }
+                                            .br{
+                                                height: 5px !important;
+                                            }
+                                            .buttonTooltip{
+                                                width: min-content;
+                                                height: 13px;
+                                            }
+                                            .icon-dv-tooltipInfo{
+                                                font-size: $font-s + 1;
+                                            }
+                                        }
+                                        & > p{
+                                            margin-bottom: 5px;
+                                            &:last-of-type{
+                                                margin: 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .optionCard__seeMore{
+            display: inline-block;
+            width: auto;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            margin: auto;
+            padding: 3px 10px;
+            background-color: #fff;
+            transform: translate(-50%, 50%);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.09), 0 3px 6px rgba(0, 0, 0, 0.09);
+            font-size: $font-p - 2;
+            text-align: center;
+            border-radius: 100px;
+            text-decoration: none;
+            z-index: 1;
+            transition-duration: .2s;
+            .icon{
+                display: inline-block;
+                font-size: $font-p - 2;
+                margin-right: 5px;
+                position: relative;
+                top: 1px;
+                transition-duration: .2s;
+            }
+            .icon--isToggle{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .optionCard__moreInfo{
+        background: #000000;
+        padding-top: 66px;
+        padding-bottom: 66px;
+        overflow: hidden;
+        z-index: 99999;
+        &--hidden{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            z-index: 200;
+            border-radius: 6px;
+            .containerDataHidden{
+                width: 80%;
+                max-width: 455px;
+                border-radius: 6px;
+                margin: auto;
+                background-color: $gris-ee;
+                &--color{
+                    background-color: $blanco-f8;
+                    border-radius: 6px;
+                    padding-bottom: 11.2px;
+                }
+                .container__imageText{
+                    margin: 0px auto 7.4px;
+                    min-height: 122px;
+                    height: 30vw;
+                    max-height: 140px;
+                    background-size: 100% 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    border-bottom-left-radius: 200% 80px;
+                    border-bottom-right-radius: 200% 80px;
+                    & *{
+                        color: $blanco-ff;
+                        font-size: $font-s;
+                    }
+                    .money{
+                        font-size: $font-p + 2;
+                        font-weight: bold;
+                    }
+                    & > .br{
+                        height: 7.6px;
+                    }
+                }
+                & > h2{
+                    font-size: $font-p;
+                }
+                .topLine{
+                    width: 90%;
+                    margin: 11px auto 10px;
+                    border: 0.65px solid rgba($color: $gris-57, $alpha: 0.1);
+                }
+                .container_infoCard{
+                    border-radius: 5px;
+                    margin: auto;
+                    width: 90%;
+                    .studyCreditMore__container{
+                        .containerData{ 
+                            width: 100%;
+                            background-color: $blanco-ff;
+                        }
+                    }
+                }
+                .contVideo{
+                    width: 100%;
+                    padding: 8.3px 0px 9px;
+                    background-color: $blanco-f8;
+                    .video{
+                        font-size: $font-s -2;
+                    }
+                }
+                .size{
+                    font-size: $font-s;
+                    width: 100%;
+                    margin: auto;
+                    background-color: $blanco-ff;
+                    border-radius: 5px;
+                    padding: 7px 0px 5px;
+                    *{
+                        font-size: $font-s;
+                    }
+                }
+            }
+        }
+    }
+    .spaceButtonText{
+        height: 25px;
+        &--withLink{
+            height: auto;
+            margin: 0 auto;
+            max-width: 85%;
+            }
+    }
+}
+.studyCreditMore__container{
+    & *{
+        font-size: $font-p;
+        color: $gris-57;
+    }
+    .container--intBackGray{
+        box-shadow: 1px 1px 3px rgba($color: $gris-57, $alpha: 0.3);
+        background-color: $blanco-f8 !important;
+        &Alpha{
+            color: rgba($color: $gris-57, $alpha: 0.3) !important;
+            .icon-dv-edit::before{
+                color: rgba($color: $gris-57, $alpha: 0.3);
+            }
+            & *{
+                /*Se modifica el color del texto contenido en el input sin eliminar la clase por si se llega a necesitar*/
+                color: $gris-57;
+            }
+        }
+        .input{
+            position: relative;
+            .input__buttonAction{
+                bottom: -3px;
+            }
+        }
+    }
+    .joinForm{
+        background: $blanco-f8;
+        width: 90%;
+        max-width: 590px;
+        height: 40px;
+        margin: auto;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-image: url('../images/Trazado2759.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        display: flex;
+        align-items: center;
+        &--colorAlpha{
+            //se eliminan las propiedades que usan important y se agrega el color por defecto usado (no se elimina la clase por futuras posibles modificaciones.)
+            & *{
+                color: $gris-57;
+            }
+        }
+    }
+    .lineTop{
+        width: 70%;
+        margin: 11px auto 8.5px;
+        border: 1px solid rgba($color: $gris-57, $alpha: 0.1);
+        border-radius: 10px;
+    }
+    .containerData{
+        width: 80%;
+        margin: auto;
+        background-color: $blanco-f8;
+        padding: 16.1px 7px 13.4px 7px;
+        border-radius: 6px;
+        .text{
+            *{
+                font-size: 12px;
+                text-align: left;
+            }
+            .item{
+                display: flex;
+                .itemIcon{
+                    font-size: $font-p - 2;
+                    margin-right: 5px;
+                    position: relative;
+                    transition-duration: .2s;
+                    display: inline-flex;
+                    padding-top: 5px;
+                    width: 9px;
+                    .icon-dv-listItemB{
+                        font-size: $font-s - 5;
+                    }
+                    .iconImage{
+                        margin-top: 0px;
+                        width: 9px;
+                        height: 9px;
+                    }
+                }
+                .containerText{
+                    display: flex;
+                    flex-direction: column;
+                    .title{
+                        font-size: $font-p;
+                        font-weight: bold;
+                        margin-bottom: 3.4px;
+                        height: 19px;
+                    }
+                    .subTitle{
+                        font-size: $font-p;
+                        font-weight: bold;
+                        height: 19px;
+                        margin-bottom: 1px;
+                    }
+                    .br{
+                        height: 9px !important;
+                    }
+                    & > p{
+                        height: 16px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .icon-dv-tooltipInfo{
+                        font-size: $font-p + 1;
+                    }
+                }
+            }
+        }
+        hr{
+            width: 40%;
+            border: 1px solid rgba($color: $gris-57, $alpha: 0.1);
+            margin: 11px auto;
+        }
+    }
+    .regular{
+        font-size: $font-s;
+        b{
+            font-size: $font-s;
+        }
+    }
+}

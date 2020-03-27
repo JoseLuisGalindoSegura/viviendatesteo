@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+<body>
+    <section class="container">
+        <div class="titlesHeader--Desktop">
+            <h1>Vivienda Móvil</h1>
+            <h3>Estudio de crédito</h3>
+        </div>
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <div class="trackingMain">
+            <div class="trackingMain__dataNav">
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+            </div>
+        </div>
+        <div class="contentBox">
+            <h1 class="center mrgnConfirmation">Verifique las condiciones de su solicitud</h1>
+            <div class="result__Confir">
+                <div class="result__Confir__item">
+                    <strong>Valor del crédito:</strong>
+                    <span>$50,000,000</span>
+                </div>
+                <div class="result__Confir__item">
+                    <strong>Plazo del crédito:</strong>
+                    <span>180 meses</span>
+                </div>
+                <div class="result__Confir__item">
+                    <strong>Cuota aproximada con seguros:</strong>
+                    <span><b>Leasing habitacional: </b>$622.044</span>
+                    <span><b>Tasa:</b> 0,85% MV ( 10.75% EA)</span>
+                </div>
+                <div class="result__Confir__item">
+                    <strong>Cuota aproximada con seguros:</strong>
+                    <span><b>Crédito hipotecario: </b>$645.000</span>
+                    <span><b>Tasa: </b>0,91% MV(11.50% EA)</span>
+                </div>
+
+                <!--Items agregados -->
+
+                <div class="result__Confir__item">
+                    <strong>Seguro de incendio y terremoto:</strong>
+                    <span>Póliza individual Seguros Bolivar</span>
+                </div>
+
+                <div class="result__Confir__item">
+                    <strong>Seguro de vida:</strong>
+                    <span>Póliza individual Seguros Bolivar</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="contButtons">
+            <p class="textButton">Al dar clic en el botón, iniciará la <b>evaluación de su solicitud.</b></p>
+            <button type="button" class="button button--secondary button--back">Regresar</button>
+            <button type="button" class="button button--primary" onclick="showModalStudy()">Solicitar crédito</button>
+        </div>
+    </section>
+    <section class="contStudyProcess" id="StudyProcess">
+        <h2 class="contStudyProcess__title">Estamos evaluando su solicitud.</h2>
+        <div class="clockAnimation" >
+            <span class="clockAnimation__item clockAnimation--light__item"></span>
+            <span class="clockAnimation__item clockAnimation--light__item"></span>
+            <span class="clockAnimation__item clockAnimation--light__item clockAnimation__item--vertical"></span>
+        </div>
+        <p class="contStudyProcess__text">
+            <span>Espere un momento por favor…</span>
+            <span>Recuerde que este proceso de evaluación <strong>NO</strong> tiene cobros por comisión de tramite.</span>
+            <span>¡No use intermediarios!</span>
+        </p>
+    </section>
+    <script src="../js/main.js"></script>
+</body>
+</html>

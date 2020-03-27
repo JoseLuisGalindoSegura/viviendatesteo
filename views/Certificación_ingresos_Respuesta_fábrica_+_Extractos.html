@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="../js/jsCertificacionIngresos.js"></script>
+    <title>Davivienda S.A.</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <!-- #region Header descktop-->
+        <div class="titlesHeader--Desktop">
+            <h1>Vivienda Móvil</h1>
+            <h3>Certificación de ingresos</h3>
+        </div>
+        <!-- #endregion Header descktop-->
+
+        <!-- #region Btn Atras-->
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <!-- #endregion Btn Atras-->
+
+        <!-- #region Nav indicador-->
+        <div class="trackingMain">
+            <div class="trackingMain__dataNav">
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+            </div>
+        </div>
+        <!-- #endregion indicador-->
+        
+        
+        <h1 class="center noMrgnBottom">Proceso de certificación de ingresos</h1>
+        <div class="contentBox">
+            <div class="information__container">
+                <p class="certificadp__title certificadp__title--bot0">
+                    Identificamos inconsistencias en sus <strong>extractos
+                    bancarios,</strong> es necesario que los <strong>adjunte de nuevo:</strong>
+                </p>
+                <form>
+                    <!-- #region subSeccion subirArchivos-->
+                    <div id="quest2sub1" class="cardArchivos">
+                        
+                        <div class="infoExtractos infoExtractos--top0">
+                            <div class="infoExtractos__lista">
+                                <img src="../images/Trazado_4258.svg" alt="">
+                                <p>Información a tener en cuenta en sus extractos:</p>
+                            </div>
+                            <p class="infoExtractos__texto">
+                                Los extractos bancarios deben ser de los últimos 
+                                tres meses, deben contener el número de 
+                                producto y el tipo de cuenta (ahorros o corriente).
+                                <br> <br>
+                                Tenga en cuenta que no se aceptan extractos de 
+                                cuentas conjuntas o de empresas.
+                                <br>
+                            </p>
+                        </div>
+
+                        <hr>
+                        
+                        <div class="cardArchivos__lista">
+                            <img src="../images/Trazado_4258.svg" alt="">
+                            <p>Adjunte de nuevo sus extractos según teniendo en
+                                cuenta las observaciones: </p>
+                        </div>
+
+                        <!-- #region subArchivps-->
+                        <div id="doc1" class="input2 input2--sub">
+                            <label class="labelBold labelBold--left0">
+                                Cuenta 1
+                            </label>
+                            <label for="" class="descripcion">
+                                <ul>
+                                    <li>Su colilla de pensión tiene mas de 30 días de expedido.</li>
+                                    <li>Su colilla de pensión debe corresponder al titular.</li>
+                                    <li>Su colilla de pensión debe incluir el tipo de contrato. Este texto puede ser remplazado</li>
+                                </ul>
+                            </label>
+                            <div id="subDoc1" class="contArchivos contArchivos--top0">
+                                <div class="divImgArchivos camaraNon" onclick="archivoAdjunto2(1); activarBtn()">
+                                    <img src="../images/camera.svg" alt="">
+                                    <p class="divImgArchivos__p">Tomar foto</p>
+                                </div>
+                                <div class="divImgArchivos" onclick="archivoAdjunto2(1); activarBtn()">
+                                    <img src="../images/paperclip.svg" alt="">
+                                    <p class="divImgArchivos__p">
+                                        Adjuntar <br>
+                                        Extractos
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="docAdj1" class="archivosAdjuntos ocultar">
+                                <img src="../images/Trazado_4346.svg" class="archivosAdjuntos__check" alt="verificacion adjutos">
+                                <p class="archivosAdjuntos__p">Extractos adjuntados</p>
+                                <img src="../images/icon-dv-delete.svg" class="archivosAdjuntos__delete" alt="eliminar archivos" onclick="eliminarAdjunto(1); desactivarBtn()">
+                            </div>
+                        </div>
+                        <!-- #endregion subArchivps-->
+
+                        <!-- #region subArchivps-->
+                        <div id="doc2" class="input2 input2--sub">
+                            <label class="labelBold labelBold--left0">
+                                Cuenta 2
+                            </label>
+                            <label for="" class="descripcion">
+                                <ul>
+                                    <li>Su colilla de pensión tiene mas de 30 días de expedido.</li>
+                                    <li>Su colilla de pensión debe corresponder al titular.</li>
+                                    <li>Su colilla de pensión debe incluir el tipo de contrato. Este texto puede ser remplazado</li>
+                                </ul>
+                            </label>
+                            <div id="subDoc2" class="contArchivos contArchivos--top0">
+                                <div class="divImgArchivos camaraNon" onclick="archivoAdjunto2(2); activarBtn()">
+                                    <img src="../images/camera.svg" alt="">
+                                    <p class="divImgArchivos__p">Tomar foto</p>
+                                </div>
+                                <div class="divImgArchivos" onclick="archivoAdjunto2(2); activarBtn()">
+                                    <img src="../images/paperclip.svg" alt="">
+                                    <p class="divImgArchivos__p">
+                                        Adjuntar <br>
+                                        Extractos
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="docAdj2" class="archivosAdjuntos ocultar">
+                                <img src="../images/Trazado_4346.svg" class="archivosAdjuntos__check" alt="verificacion adjutos">
+                                <p class="archivosAdjuntos__p">Extractos adjuntados</p>
+                                <img src="../images/icon-dv-delete.svg" class="archivosAdjuntos__delete" alt="eliminar archivos" onclick="eliminarAdjunto(2); desactivarBtn()">
+                            </div>
+                        </div>
+                        <!-- #endregion subArchivps-->
+                        
+
+
+                    </div>
+                        <!-- #endregion subSeccion subirArchivos-->
+                    
+                </form>
+            </div>
+        </div>
+
+        <!-- #region btn Continuar-->
+        <div class="contButtons contButtons--form">
+            <button type="button" class="button button--secondary button--back">Regresar</button>
+            <button id="btn" type="button" class="button button--primary">Continuar</button>
+        </div>
+        <!-- #endregion btn Continuar-->
+    </section>
+
+</body>
+
+</html>

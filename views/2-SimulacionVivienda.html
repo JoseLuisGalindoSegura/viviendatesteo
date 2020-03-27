@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+<body>
+    <section class="container">
+        <div class="titlesHeader--Desktop">
+            <h1>Vivienda Móvil</h1>
+            <h3>Simulación</h3>
+        </div>
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <div class="contentBox">
+            <div class="simulation__container">
+                <form>
+                    <div class="input">
+                        <p class="simulation__title">Ingrese los siguientes datos para simular su crédito:</p>
+                        <label for="num-ases">¿Cuál es el valor del crédito?</label>
+                        <div class="input">
+                            <input type="number" id="num-credit" value="" placeholder="$0.00">
+                            <a href="javascript:void(0)" class="buttonTooltip">
+                                <span class="icon-dv-tooltipAsk"></span>
+                            </a>
+                            <div class="tooltip">
+                                <p>
+                                    El valor corresponde al mismo que solicitará para 
+                                    financiar su inmueble. Puede solicitar máximo 
+                                    $800.000.000, si el monto es mayor a este valor 
+                                    deberá acercarse a una oficina. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <p class="label">¿En qué plazo desea pagar su crédito?</p>
+                        <label class="radio" onclick="selectOptionsOneView()">
+                            Meses
+                            <input type="radio" value="" name="dir-principal"> 
+                            <div class="radio__indicator"></div>
+                        </label>
+                        <label class="radio" onclick="selectOptionsTwoView()">
+                            Años
+                            <input type="radio" value="" name="dir-principal">
+                            <div class="radio__indicator"></div>
+                        </label>
+                    </div>
+                    <div class="input" id="option1" style="display: none;">
+                        <label for="num-ases">Ingrese el número de meses:</label>
+                        <div class="input">
+                            <input type="number" id="num-ases" value="" placeholder="">
+                            <a href="javascript:void(0)" class="buttonTooltip">
+                                <span class="icon-dv-tooltipAsk"></span>
+                            </a>
+                            <div class="tooltip">
+                                <p>
+                                    El plazo mínimo es 60 meses y el máximo 240 meses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input input--rangeSlider" id="option2" style="display: none;">
+                            <label for="valor-asegurar">Seleccione el plazo:</label>
+                            <div class="rangeSlider">
+                                <span class="rangeSlider__bubbleIndicator">
+                                    <label>
+                                        5
+                                    </label>
+                                </span>
+                                <div class="rangeSlider__quantityNumbers"><strong>5</strong><strong>20</strong></div>
+                                <input type="range" class="rangeSlider__input" id="valor-asegurar" min="5" max="20" step="1" value="5">
+                                <div class="rangeSlider__quantityTitles"><span>Años</span><span>Años</span></div>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <div class="contButtons">
+            <button type="button" class="button button--secondary button--back">Regresar</button>
+            <button type="button" class="button button--primary">Simular</button>
+        </div>
+    </section>
+    <script src="../js/main.js"></script>
+    <script>
+        selectOptionsOneView = () => {
+            document.getElementById('option2').style.display='none';
+            document.getElementById('option1').style.display='block';
+        }
+        selectOptionsTwoView = () => {
+            document.getElementById('option1').style.display='none';
+            document.getElementById('option2').style.display='block';
+        }
+    </script>
+</body>
+</html>

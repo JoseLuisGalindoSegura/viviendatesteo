@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="titlesHeader--Desktop">
+            <h1>Vivienda Móvil</h1>
+            <h3>Valoración médica</h3>
+        </div>
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <div class="trackingMain">
+            <div class="trackingMain__dataNav">
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+            </div>
+        </div>
+        <h1 class="center noMrgnBottom">Proceso de valoración médica</h1>
+        <div class="contentBox">
+            <div class="information__container">
+                <p class="container__title">Este proceso es necesario para detallar las 
+                    condiciones del <strong>seguro de vida por parte de la 
+                    aseguradora. </strong> Para continuar ingrese la siguiente 
+                    información:
+                </p>
+                <form>
+                    <div class="input">
+                        <label for="actividad-laboral">¿Cuál es su peso actual?</label>
+                        <input type="text" id="PesoActual" value="" placeholder="Ingrese su peso en kg">
+                    </div>
+                    <div class="input">
+                        <label for="actividad-laboral">¿Cuál es su estatura?</label>
+                        <input type="text" id="PesoActual" value="" placeholder="Ingrese su estatura en cm">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="contButtons">
+            <button type="button" class="button button--secondary button--back">Regresar</button>
+            <button type="button" class="button button--primary">Continuar</button>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+    
+        document.getElementById('seemore--firstCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--firstCard').style.display = '';
+            document.getElementById('firstCard').style.display = '';
+        }
+        document.getElementById('seeless--firstCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--firstCard').style.display = '';
+            document.getElementById('firstCard').style.display = 'none';
+        }
+
+        document.getElementById('seemore--secondCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--secondCard').style.display = '';
+            document.getElementById('secondCard').style.display = '';
+        }
+        document.getElementById('seeless--secondCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--secondCard').style.display = '';
+            document.getElementById('secondCard').style.display = 'none';
+        }
+
+        document.getElementById('seemore--threeCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--threeCard').style.display = '';
+            document.getElementById('threeCard').style.display = '';
+        }
+        document.getElementById('seeless--threeCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--threeCard').style.display = '';
+            document.getElementById('threeCard').style.display = 'none';
+        }
+
+        document.getElementById('seemore--fourCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--fourCard').style.display = '';
+            document.getElementById('fourCard').style.display = '';
+        }
+        document.getElementById('seeless--fourCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--fourCard').style.display = '';
+            document.getElementById('fourCard').style.display = 'none';
+        }
+
+        document.getElementById('seemore--fiveCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seeless--fiveCard').style.display = '';
+            document.getElementById('fiveCard').style.display = '';
+        }
+        document.getElementById('seeless--fiveCard').onclick=function(){
+            this.style.display = 'none';
+            document.getElementById('seemore--fiveCard').style.display = '';
+            document.getElementById('fiveCard').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
